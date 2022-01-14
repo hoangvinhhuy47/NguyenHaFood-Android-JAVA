@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mautrang">
+    <RelativeLayout
+
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_ontop_activity_customersupport"
+        android:background="@color/maucam">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/width_iconback_activity_customersupport"
+            android:layout_height="@dimen/heith_iconback_activity_customersupport"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/Margin_padding4"
+            android:background="@mipmap/back"></ImageView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/Margin_padding4"
+            android:text="Hỗ Trợ Khách Hàng"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize14"></TextView>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_top"
+        android:background="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/Margin_padding16"
+        android:layout_below="@+id/top"
+        android:layout_width="@dimen/width_imglogo_activity_customersupport"
+        android:layout_height="@dimen/heith_imglogo_activity_customersupport"></ImageView>
+    <TextView
+        android:id="@+id/support_client"
+        android:text="Trợ Giúp - Chăm Sóc Khách Hàng"
+        android:gravity="center"
+        android:padding="@dimen/Margin_padding5"
+        android:drawableStart="@drawable/customersupport"
+        android:drawableEnd="@drawable/right_30"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"
+        android:layout_marginTop="@dimen/Margin_padding10"
+        android:layout_below="@+id/img_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_text_activity_customersupport"
+        tools:ignore="RtlCompat"></TextView>
+    <TextView
+        android:id="@+id/regulations"
+        android:text="Các Quy Định Và Chính Sách"
+        android:gravity="center"
+        android:padding="@dimen/Margin_padding5"
+        android:drawableStart="@drawable/book"
+        android:drawableEnd="@drawable/right_30"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"
+        android:layout_marginTop="@dimen/Margin_padding10"
+        android:layout_below="@+id/support_client"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_text_activity_customersupport"
+        tools:ignore="RtlCompat"></TextView>
+    <TextView
+        android:id="@+id/contact_imfomation"
+        android:text="Thông Tin Liên Hệ"
+        android:gravity="center"
+        android:padding="@dimen/Margin_padding5"
+        android:drawableStart="@drawable/thongtinlienhe"
+        android:drawableEnd="@drawable/right_30"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"
+        android:layout_marginTop="@dimen/Margin_padding10"
+        android:layout_below="@+id/regulations"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_text_activity_customersupport"
+        tools:ignore="RtlCompat"></TextView>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/chat_with"
+        android:text="Chat Với Hệ Thống"
+        android:gravity="center"
+        android:drawableStart="@drawable/chat"
+        android:padding="@dimen/Margin_padding5"
+        android:layout_marginLeft="@dimen/Margin_padding40"
+        android:background="@drawable/button"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"
+        android:layout_marginTop="@dimen/Margin_padding10"
+        android:layout_below="@+id/contact_imfomation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_text_activity_customersupport"
+        tools:ignore="RtlCompat"></TextView>
+</RelativeLayout>

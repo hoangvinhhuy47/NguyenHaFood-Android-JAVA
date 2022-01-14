@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/Margin_padding5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewa"
+        android:layout_margin="@dimen/Margin_padding4"
+        app:cardCornerRadius="@dimen/radius_img_item_menu_cap2"
+        android:layout_width="@dimen/width_img_item_menu_cap2"
+        android:layout_height="@dimen/heith_img_item_menu_cap2">
+        <ImageView
+            android:padding="@dimen/Margin_padding10"
+            android:id="@+id/img_menu_item"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name_menu_item"
+        android:textSize="@dimen/TextSize9"
+        android:layout_marginStart="@dimen/Margin_padding4"
+        android:layout_marginEnd="@dimen/Margin_padding4"
+        android:text="Title"
+        android:layout_below="@id/cardViewa"
+        android:textAlignment="center"
+        android:textColor="@color/mauden"
+        android:layout_width="@dimen/width_img_item_menu_cap2"
+        android:layout_height="@dimen/heith_content_item_menu_cap2"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:id="@+id/lni_catory_menu"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/name_menu_item"
+        android:layout_width="@dimen/width_img_item_menu_cap2"
+        android:layout_height="1.2dp"
+        tools:ignore="Orientation"></LinearLayout>
+
+</RelativeLayout>

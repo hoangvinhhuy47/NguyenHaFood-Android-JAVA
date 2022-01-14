@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/Margin_padding8"
+    app:cardCornerRadius="10dp"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_item_Activity_viewcart"
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_Imgproduct_item_Activity_viewcart"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_viewcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/specialprice_product_viewcart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/textview_backgroud"
+                        android:paddingLeft="@dimen/Margin_padding2"
+                        android:textColor="@color/mautrang"
+                        android:textSize="@dimen/Margin_padding12"></TextView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding4"
+                android:layout_marginRight="@dimen/Margin_padding8">
+
+                <TextView
+                    android:id="@+id/Name_viewcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+
+                <RelativeLayout
+                    android:id="@+id/PriceT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Name_viewcard"
+                    android:layout_marginTop="@dimen/Margin_padding8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/sellprice_product_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:gravity="center"
+
+                            android:textColor="@color/maudo"
+                            android:textSize="@dimen/TextSize14" />
+
+                        <TextView
+                            android:id="@+id/saleprice_product_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:gravity="center"
+                            android:textColor="#A3A2A2"
+                            android:textSize="@dimen/TextSize11" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/delete_viewcard"
+                        android:layout_width="@dimen/width_icon"
+                        android:layout_height="@dimen/heith_icon"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/close" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/PriceT">
+
+                    <LinearLayout
+                        android:id="@+id/top2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/heith_icon"
+
+                        android:layout_marginTop="@dimen/Margin_padding4">
+
+                        <Button
+                            android:id="@+id/refuse_viewcard"
+                            android:layout_width="@dimen/width_icon"
+                            android:layout_height="@dimen/heith_icon"
+                            android:layout_gravity="center"
+                            android:background="@drawable/test"
+                            android:text="-"
+                            android:textColor="@color/maucam"
+                            android:textSize="@dimen/TextSize16"
+                            android:textStyle="bold" />
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/width_soluong_item_Activity_viewcart"
+                            android:layout_height="match_parent"
+                            android:background="@color/mautrangxam">
+
+                            <TextView
+                                android:id="@+id/qualiti_viewcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:text="1"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/flus_viewcard"
+                            android:layout_width="@dimen/width_icon"
+                            android:layout_height="@dimen/heith_icon"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/Margin_padding4"
+                            android:background="@drawable/test"
+                            android:text="+"
+                            android:textColor="@color/maucam"
+                            android:textSize="@dimen/TextSize16"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/progessbar_flus"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"></ProgressBar>
+                    <TextView
+                        android:id="@+id/add_product_buylater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/Margin_padding8"
+                        android:text="Mua sau"
+                        android:textColor="@color/maucam"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/Margin_padding1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành Tiền: "
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14" />
+
+                        <TextView
+                            android:id="@+id/totalprice_product_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14" />
+
+                        <TextView
+                            android:id="@+id/totalprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit_cart"
+            style="@style/SpinKitView.Large.ThreeBounce"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/maucam"></com.github.ybq.android.spinkit.SpinKitView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

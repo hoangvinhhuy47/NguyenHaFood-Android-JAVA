@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_top_Activity_shareapp">
+
+                <ImageView
+                    android:id="@+id/icon_backdaxem"
+                    android:layout_width="@dimen/width_iconback_activityViewproduct"
+                    android:layout_height="@dimen/heith_iconback_activityViewproduct"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:background="@mipmap/back"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Margin_padding8"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/search"
+                        android:layout_width="@dimen/widthMess_cart"
+                        android:layout_height="@dimen/heithMess_cart"
+                        android:layout_marginRight="@dimen/Margin_padding_am3">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/search" />
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/widthMess_cart"
+                        android:layout_height="@dimen/heithMess_cart">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/view_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/cart" />
+
+                            <TextView
+                                android:id="@+id/cart_badge"
+                                android:layout_width="@dimen/widthcontentMess_cart"
+                                android:layout_height="@dimen/heithcontentMess_cart"
+                                android:layout_gravity="right|end|top"
+                                android:layout_marginTop="@dimen/Margin_padding2"
+                                android:layout_marginEnd="@dimen/Margin_padding1"
+                                android:layout_marginRight="@dimen/Margin_padding_am8"
+                                android:background="@drawable/badge_background"
+                                android:gravity="center"
+                                android:padding="@dimen/Margin_padding2"
+                                android:text="0"
+                                android:textColor="@color/maudo"
+                                android:textSize="@dimen/TextSize8" />
+
+                        </FrameLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="Đã xem"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top"
+            android:layout_marginLeft="@dimen/Margin_padding4"
+            android:layout_marginTop="@dimen/Margin_padding4"
+            android:layout_marginRight="@dimen/Margin_padding4">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refest_viewedproduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_product_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/SpinKitView.Small.FadingCircle"
+            android:visibility="gone"
+            app:SpinKit_Color="#F8B154"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/spin_kit_activity_productview"
+            android:layout_width="@dimen/width_SpinKitView_activityViewproduct"
+            android:layout_height="@dimen/heith_SpinKitView_activityViewproduct"
+            android:layout_alignParentBottom="true"></com.github.ybq.android.spinkit.SpinKitView>
+    </RelativeLayout>
+</RelativeLayout>

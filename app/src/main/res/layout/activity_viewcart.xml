@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:background="#f1f2f6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_ontop_Activity_viewcart">
+
+                <ImageView
+                    android:id="@+id/backxemgiohang"
+                    android:layout_width="@dimen/width_iconback_Activity_viewcart"
+                    android:layout_height="@dimen/heith_iconback_Activity_viewcart"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:background="@mipmap/back"></ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="Xem giỏ hàng"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize14" />
+
+                <TextView
+                    android:id="@+id/qualiti_product_viewcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="(0)"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refest_viewcart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:layout_marginBottom="@dimen/Margin_bottom_SwipeRefreshLayout_Activity_viewcart">
+
+            <ScrollView
+                android:id="@+id/sr1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mautrang">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+
+                        android:id="@+id/cart_null"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_layoutNullCart_Activity_viewcart"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/Margin_padding24"
+                        android:background="@drawable/nullcart"
+                        android:gravity="center"
+                        android:visibility="gone"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cart_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/view_product_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding8"
+                            app:cardCornerRadius="5dp">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recy_viewcard"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:nestedScrollingEnabled="false"
+                                android:scrollbars="horizontal"></androidx.recyclerview.widget.RecyclerView>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/viewmore_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding2"
+                            android:layout_below="@+id/view_product_cart"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/Margin_padding4"
+                            android:layout_marginTop="@dimen/Margin_padding16"
+                            android:layout_marginRight="@dimen/Margin_padding4"
+                            android:layout_marginBottom="@dimen/Margin_padding16"
+                            android:background="#C1C1C1"
+                            tools:ignore="Orientation"></LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/top5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/heith_groupgiamgia_Activity_viewcart"
+                            android:layout_below="@id/viewmore_cart"
+                            android:layout_marginLeft="@dimen/Margin_padding8"
+                            android:layout_marginTop="@dimen/Margin_padding8"
+                            android:layout_marginRight="@dimen/Margin_padding8"
+                            android:background="@drawable/test">
+
+                            <EditText
+                                android:id="@+id/edit_promotioncode"
+                                android:layout_width="@dimen/width_edtgiamgia_Activity_viewcart"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:layout_marginTop="@dimen/Margin_padding12"
+                                android:padding="5dp"
+
+                                android:background="@drawable/test"
+                                android:drawableStart="@drawable/payment"
+                                android:hint="Nhập mã giảm giá..."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat">
+
+                            </EditText>
+                            <ProgressBar
+                                android:id="@+id/progessbar_promotion"
+                                android:visibility="gone"
+                                android:layout_centerInParent="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"></ProgressBar>
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/add_promotion_viewcart"
+                                style="@style/Clickable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:layout_marginTop="@dimen/Margin_padding12"
+                                android:layout_marginRight="@dimen/Margin_padding8"
+                                android:layout_marginBottom="@dimen/Margin_padding18"
+                                android:layout_toRightOf="@id/edit_promotioncode"
+                                android:background="@drawable/button_muahang"
+                                android:text="Áp Dụng"
+                                android:textColor="@color/mautrang"
+                                android:textSize="@dimen/TextSize11" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding1"
+                            android:layout_below="@+id/top5"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/Margin_padding4"
+                            android:layout_marginTop="@dimen/Margin_padding16"
+                            android:layout_marginRight="@dimen/Margin_padding4"
+                            android:layout_marginBottom="@dimen/Margin_padding16"
+                            android:background="#C1C1C1"
+                            tools:ignore="Orientation"></LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/top6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/top5"
+                            android:layout_marginLeft="@dimen/Margin_padding16"
+                            android:layout_marginTop="@dimen/Margin_padding24">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tạm tính:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/mauxam"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:id="@+id/price_viewcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/Margin_padding16"
+                                android:textColor="@color/mauxam"
+                                android:textSize="@dimen/TextSize14" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/top7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/top6"
+                            android:layout_marginLeft="@dimen/Margin_padding16"
+                            android:layout_marginTop="@dimen/Margin_padding16">
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm giá:"
+                                android:textColor="@color/mauxam"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <TextView
+                                android:id="@+id/promotion_price"
+                                android:textAllCaps="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/Margin_padding16"
+                                android:textColor="@color/mauxam"
+                                android:textSize="@dimen/TextSize14" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/top8"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding1"
+                            android:layout_below="@id/top7"
+                            android:layout_marginLeft="@dimen/Margin_padding4"
+                            android:layout_marginTop="@dimen/Margin_top_groupthanhtien_Activity_viewcart"
+                            android:layout_marginRight="@dimen/Margin_padding4"
+                            android:background="@color/mauxam"
+                            tools:ignore="Orientation">
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="#f1f2f6">
+
+            <RelativeLayout
+                android:id="@+id/top9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding22"
+                android:layout_marginTop="@dimen/Margin_padding16">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng Tiền:"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize15"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/price_viewcard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/Margin_padding24"
+
+                    android:textColor="@color/maudo"
+                    android:textSize="@dimen/TextSize15" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_muahang"
+                android:layout_width="@dimen/width_button_Activity_viewcart"
+                android:layout_height="@dimen/heith_button_Activity_viewcart"
+                android:layout_below="@+id/top9"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/Margin_padding24"
+                android:layout_marginTop="@dimen/Margin_padding12"
+                android:background="@drawable/test"
+                android:text="Mua Hàng"
+                android:textColor="@color/maucam"
+                android:textSize="@dimen/TextSize12" />
+
+            <Button
+                android:id="@+id/btn_dathang"
+                android:layout_width="@dimen/width_button_Activity_viewcart"
+                android:layout_height="@dimen/heith_button_Activity_viewcart"
+                android:layout_below="@+id/top9"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:layout_marginTop="@dimen/Margin_padding12"
+                android:layout_marginRight="@dimen/Margin_padding24"
+                android:background="@drawable/button_muahang"
+                android:text="Đặt hàng"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize12" />
+        </RelativeLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayoutcart"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_below="@id/top"
+            android:background="@drawable/backgourndsimmer"></com.facebook.shimmer.ShimmerFrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

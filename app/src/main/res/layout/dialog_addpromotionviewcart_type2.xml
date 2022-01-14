@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/mautrang"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/topcontent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_Dialog_cartdelete"
+        android:background="@color/maucam">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông Tin Phiếu Giảm Giá"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize15" />
+
+        <ImageView
+            android:id="@+id/img_dialog_eixt"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@mipmap/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topcontent"
+        android:layout_marginTop="@dimen/Margin_padding8">
+
+        <GridLayout
+            android:id="@+id/top123"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:text="Mã Giảm Giá:"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/text_magiamgia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:text="Loại:"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/text_loaigiamgia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:text="Tạm Tính:"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/text_tamtinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+        </GridLayout>
+        <ListView
+            android:layout_centerInParent="true"
+            android:id="@+id/list_product_promotion"
+            android:layout_below="@+id/top123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+           <LinearLayout
+               android:id="@+id/top12345"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/list_product_promotion"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_marginTop="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:gravity="left"
+                   android:text="Tổng Tiền"
+                   android:textColor="@color/maudo"
+                   android:textSize="@dimen/TextSize15" />
+               <TextView
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:id="@+id/text_tongtien"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:gravity="left"
+                   android:textColor="@color/mauden"
+                   android:textSize="@dimen/TextSize15" />
+
+           </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/top1234"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/top12345"
+            android:padding="5dp"
+            android:textSize="@dimen/TextSize14"
+            android:textColor="@color/mauden"
+            android:text="Bạn có muốn thêm phiếu giảm giá này vô đơn hàng của mình không?"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/Margin_padding16"
+            android:layout_below="@+id/top1234"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/accept_dialog"
+                android:layout_width="@dimen/width_button_Dialog_cartdelete"
+                android:layout_height="@dimen/heith_button_Dialog_cartdelete"
+                android:layout_marginRight="@dimen/Margin_padding24"
+                android:background="@drawable/button_muahang"
+                android:text="đồng ý"
+                android:textSize="@dimen/TextSize12"
+                android:textColor="@color/maudennhat" />
+
+            <Button
+                android:id="@+id/refuse_dialog"
+                android:layout_width="@dimen/width_button_Dialog_cartdelete"
+                android:layout_height="@dimen/heith_button_Dialog_cartdelete"
+                android:background="@drawable/test"
+                android:text="hủy bỏ"
+                android:textSize="@dimen/TextSize12"
+                android:textColor="@color/maudennhat" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

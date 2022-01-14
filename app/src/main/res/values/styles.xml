@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/maucam</item>
+        <item name="android:fontFamily">@font/amiko</item>
+        <item name="colorPrimaryDark">@color/maucam</item>
+        <item name="colorAccent">@color/maucam</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/TextSize11</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="EroorTextInputStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/TextSize11</item>
+        <item name="android:textColor">#EF4C24</item>
+
+    </style>
+    <style name="TextInputStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/TextSize12</item>
+    </style>
+    <style name="Clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="RatingBar.Padding" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars_padding</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+    <style name="spinner_style">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:dropDownWidth">533dp</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:popupBackground">@drawable/button_muahang</item>
+        <item name="android:dropDownHeight">70dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+</resources>

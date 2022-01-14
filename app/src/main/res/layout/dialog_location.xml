@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+<LinearLayout
+    android:id="@+id/top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:gravity="center"
+        android:layout_width="@dimen/width_icon"
+        android:layout_height="@dimen/heith_icon"></CheckBox>
+    <TextView
+        android:layout_marginLeft="@dimen/Margin_padding5"
+        android:gravity="center"
+        android:textSize="@dimen/TextSize12"
+        android:textColor="@color/mauden"
+        android:text="14/7 bis Kỳ Đồng Phường 9 Quận 3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="RtlCompat">
+    </TextView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/top"
+        android:id="@+id/top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:gravity="center"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"></CheckBox>
+        <TextView
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:gravity="center"
+            android:textSize="@dimen/TextSize12"
+            android:textColor="@color/mauden"
+            android:text="14/7 bis Kỳ Đồng Phường 9 Quận 3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="RtlCompat">
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>

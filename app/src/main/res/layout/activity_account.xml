@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Acount_login.AccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBFB">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_ontop_activity_account">
+
+                <ImageView
+                    android:id="@+id/backaccount"
+                    android:layout_width="@dimen/width_iconback_activity_account"
+                    android:layout_height="@dimen/heith_iconback_activity_account"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginTop="@dimen/Margin_padding8"
+                    android:background="@mipmap/back"></ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="Đăng nhập/Đăng ký"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top">
+
+            <TextView
+                android:id="@+id/textwellcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/Margin_padding5"
+                android:layout_marginBottom="@dimen/Margin_padding10"
+                android:gravity="center"
+                android:text="CHÀO MỪNG BẠN ĐẾN VỚI  NGUYENHAFOOD"
+                android:textColor="@color/maucam"
+                android:textSize="@dimen/TextSize14"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/width_imglogo_activity_account"
+                android:layout_height="@dimen/heith_imglogo_activity_account"
+                android:layout_below="@+id/textwellcome"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logo"></ImageView>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top2"
+            android:layout_marginLeft="@dimen/Margin_padding2"
+            android:layout_marginTop="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding2"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/top3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding4">
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tablayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/mautrang"
+                            app:tabIndicatorColor="@color/maucam"
+                            app:tabSelectedTextColor="@color/maucam"
+                            app:tabTextAppearance="@style/TabLayoutStyle"
+                            app:tabTextColor="@color/mauden"></com.google.android.material.tabs.TabLayout>
+                    </com.google.android.material.appbar.AppBarLayout>
+                </RelativeLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_Account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top3"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

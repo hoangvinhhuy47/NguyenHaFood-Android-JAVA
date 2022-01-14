@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_buton"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Mã Giới Thiệu"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/TextSize14"
+            android:textColor="@color/mauden"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:id="@+id/exit_referral"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/exit_black"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"></ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/Margin_padding8"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/Margin_padding16"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/top24"
+            android:text="Nhập Mã Giới Thiệu:"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/TextSize14"
+            android:textColor="@color/mauden"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:id="@+id/top25"
+            android:layout_below="@id/top24"
+            android:background="@drawable/layout_buton"
+            android:layout_width="@dimen/width_edtmgg_activity_payments"
+            android:textSize="@dimen/TextSize12"
+            android:textColor="@color/mauden"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            android:layout_height="@dimen/heith_edtmgg_activity_payments"></EditText>
+        <Button
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:layout_below="@id/top24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/Margin_padding5"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize12"
+            android:text="Gữi"
+            android:background="@drawable/button_muahang"
+            android:layout_width="@dimen/heith_top1_Dialog_exitapp"
+            android:layout_height="@dimen/heith_buttonmgg_activity_payments">
+
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

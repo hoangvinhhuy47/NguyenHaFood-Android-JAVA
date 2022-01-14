@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/Margin_padding10"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/name_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Margin_padding8"
+        android:text="Hoàng Vĩnh Huy"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize13"></TextView>
+
+    <TextView
+        android:id="@+id/phone_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_address"
+        android:layout_marginTop="@dimen/Margin_padding8"
+        android:text="0901909514"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"></TextView>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="@dimen/width_contentaddress_AddressActivity"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_address"
+        android:layout_marginTop="@dimen/Margin_padding8"
+        android:text="160/7 Nguyễn Hữu Dật Q. Tân Phú HCM "
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"></TextView>
+
+    <TextView
+        android:id="@+id/default_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="@dimen/Margin_padding8"
+        android:text="Địa Chỉ Mặc Định"
+        android:textColor="@color/maucam"
+        android:textSize="@dimen/TextSize12"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_below="@+id/default_adress"
+        android:layout_marginTop="@dimen/Margin_padding5"
+        android:background="#D8D8D8"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu_setting_address"
+        android:layout_width="@dimen/width_iconmenu_AddressActivity"
+        android:layout_height="@dimen/heith_iconmenu_AddressActivity"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/Margin_padding16"
+        android:layout_marginRight="@dimen/Margin_padding8"
+        android:background="@mipmap/menu"></ImageView>
+</RelativeLayout>

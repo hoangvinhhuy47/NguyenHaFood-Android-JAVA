@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mautrangxam"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_ontop_activity_allorder">
+
+                <ImageView
+                    android:id="@+id/iconbackalloder"
+                    android:layout_width="@dimen/width_iconback_activity_allorder"
+                    android:layout_height="@dimen/heith_iconback_activity_allorder"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginTop="@dimen/Margin_padding10"
+                    android:background="@mipmap/back"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/search"
+                        android:layout_width="@dimen/widthMess_cart"
+                        android:layout_height="@dimen/heithMess_cart"
+                        android:layout_marginRight="@dimen/Margin_padding_am3">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/search" />
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/widthMess_cart"
+                        android:layout_height="@dimen/heithMess_cart">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/view_cart_allorder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/cart" />
+
+                            <TextView
+                                android:id="@+id/cart_badge"
+                                android:layout_width="@dimen/widthcontentMess_cart"
+                                android:layout_height="@dimen/heithcontentMess_cart"
+                                android:layout_gravity="right|end|top"
+                                android:layout_marginTop="@dimen/Margin_padding2"
+                                android:layout_marginEnd="@dimen/Margin_padding1"
+                                android:layout_marginRight="@dimen/Margin_padding_am8"
+                                android:background="@drawable/badge_background"
+                                android:gravity="center"
+                                android:padding="@dimen/Margin_padding2"
+                                android:text="0"
+                                android:textColor="@color/maudo"
+                                android:textSize="@dimen/TextSize8" />
+
+                        </FrameLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="Đơn Hàng Của Tôi"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_tap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcl_tapQLdonhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:background="@color/mautrang"
+                android:scrollbars="horizontal"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_QLdonhang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rlt_tap"
+            android:layout_marginTop="@dimen/Margin_padding4"
+            android:background="@color/mautrang"></androidx.viewpager.widget.ViewPager>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spinkit_alloder"
+            style="@style/SpinKitView.ThreeBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"></com.github.ybq.android.spinkit.SpinKitView>
+    </RelativeLayout>
+</RelativeLayout>

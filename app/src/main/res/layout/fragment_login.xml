@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mautrang"
+    tools:context=".Fragment.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/Margin_padding12"
+        android:layout_marginTop="@dimen/Margin_padding16"
+        android:layout_marginRight="@dimen/Margin_padding16"
+        android:paddingBottom="@dimen/Margin_padding24">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:textAppearance="@style/TextInputStyle"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/EroorTextInputStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_username_dn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="@dimen/TextSize13" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_input_username"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:textAppearance="@style/TextInputStyle"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/EroorTextInputStyle"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_pass_dn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/TextSize13" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/top17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_input_password"
+            android:layout_marginTop="@dimen/Margin_padding16">
+            <Button
+                android:id="@+id/btndangnhap"
+                android:layout_width="@dimen/width_button_activity_account"
+                android:layout_height="@dimen/heith_button_activity_account"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_muahang"
+                android:text="ĐĂNG NHẬP"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize13" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/loader"
+            layout="@layout/layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/reson_useapp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding32"
+            android:layout_below="@id/top17"
+            android:layout_marginTop="@dimen/Margin_padding12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Margin_padding24"
+                android:text="Đăng nhập là bạn đã chấp nhận"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Margin_padding24"
+                android:layout_alignParentRight="true"
+                android:text="điều khoản sử dụng"
+                android:textColor="@color/maucam"
+                android:textSize="@dimen/TextSize12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding32"
+            android:layout_below="@id/reson_useapp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Margin_padding24"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/Margin_padding12"
+                android:text="Quên mật khẩu?"
+                android:textColor="@color/maucam"
+                android:textSize="@dimen/TextSize12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding32"
+            android:layout_below="@id/top7"
+            android:layout_marginTop="@dimen/Margin_padding24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Margin_padding24"
+                android:layout_centerHorizontal="true"
+                android:text="Hoặc đăng nhập với"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top8"
+            android:layout_marginTop="@dimen/Margin_padding12">
+
+            <RelativeLayout
+                android:id="@+id/button_loginfb"
+                android:layout_width="@dimen/width_button_activity_account"
+                android:layout_height="@dimen/heith_buttonggfb_activity_account"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button"
+                android:padding="@dimen/Margin_padding4">
+
+                <ImageView
+                    android:id="@+id/imgfb"
+                    android:layout_width="@dimen/Margin_padding30"
+                    android:layout_height="@dimen/Margin_padding30"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_toRightOf="@+id/imgfb"
+                    android:text="Đăng nhập bằng Facebook"
+                    android:textAllCaps="true"
+                    android:textColor="@color/maudennhat"
+                    android:textSize="@dimen/TextSize12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_logingg"
+                android:layout_width="@dimen/width_button_activity_account"
+                android:layout_height="@dimen/heith_buttonggfb_activity_account"
+                android:layout_below="@+id/button_loginfb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/Margin_padding10"
+                android:background="@drawable/button"
+                android:padding="@dimen/Margin_padding4">
+
+                <ImageView
+                    android:id="@+id/imggg"
+                    android:layout_width="@dimen/Margin_padding30"
+                    android:layout_height="@dimen/Margin_padding30"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/google" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_toRightOf="@+id/imggg"
+                    android:text="Đăng nhập bằng google"
+                    android:textAllCaps="true"
+                    android:textColor="@color/maudennhat"
+                    android:textSize="@dimen/TextSize12" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

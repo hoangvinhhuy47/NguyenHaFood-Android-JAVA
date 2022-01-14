@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/Margin_padding12"
+    android:layout_marginBottom="@dimen/Margin_padding8"
+    android:background="@drawable/backgournditem"
+    app:cardBackgroundColor="@color/mautrang"
+    app:cardCornerRadius="8dp"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+
+        android:layout_width="@dimen/width_Item_Listcatory_itemFavoriteView_Fragment_Home"
+        android:layout_height="@dimen/heith_Item_Listcatory_itemFavoriteView_Fragment_Home">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cart_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_img_Item_Listcatory_itemFavoriteView_Fragment_Home"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/image_lstproduct_producthome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/special_lstproduct_producthome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/textview_backgroud"
+                    android:text="-5%"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize10"></TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_img"
+                android:layout_marginTop="@dimen/Margin_padding4">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:id="@+id/name_lstproduct_producthome"
+                    android:layout_width="@dimen/width_nameproduct_Item_Listcatory_itemFavoriteView_Fragment_Home"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left|center"
+                    android:maxLines="2"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize10"></TextView>
+                <TextView
+                    android:id="@+id/reviewvalue_lstproduct_producthome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:drawableStart="@mipmap/statcheck"
+                    android:gravity="center|right"
+                    android:text=" 5.0"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize10"
+                    tools:ignore="RtlCompat"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/Margin_padding4"
+                android:layout_marginBottom="@dimen/Margin_padding4">
+
+                <TextView
+                    android:id="@+id/sellprice_lstproduct_producthome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:textColor="@color/maudo"
+                    android:textSize="@dimen/TextSize10"></TextView>
+
+                <TextView
+                    android:id="@+id/sale_lstproduct_producthome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_toRightOf="@+id/sellprice_lstproduct_producthome"
+
+                    android:textColor="#7E7C7C"
+                    android:textSize="@dimen/TextSize8"></TextView>
+                <ImageView
+                    style="@style/Clickable"
+                    android:id="@+id/chooselstproduct_producthome"
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:background="@drawable/cart_view"
+                    tools:ignore="RtlCompat"></ImageView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

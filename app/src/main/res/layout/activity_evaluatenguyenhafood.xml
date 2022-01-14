@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_top_Activity_shareapp"
+            android:background="@color/maucam">
+
+            <ImageView
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/heith_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding5"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:background="@mipmap/back"></ImageView>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:text="Đánh Giá Dịch Vụ Nguyên Hà Food"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"></TextView>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/top2"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/TextSize12"
+            android:textColor="@color/mauden"
+            android:text="@string/danhgia"
+            android:layout_height="wrap_content"></TextView>
+
+        <ExpandableListView
+            android:id="@+id/expanded_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:animateLayoutChanges="true"
+            android:divider="#A4C739"
+            android:dividerHeight="1dp"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:transcriptMode="alwaysScroll"></ExpandableListView>
+
+<!--        <TextView-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:id="@+id/top3"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_below="@+id/expanded_menu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:textSize="@dimen/textsize"-->
+<!--            android:textColor="@color/mauden"-->
+<!--            android:text="@string/danhgia"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_Dialog_rebuy_canceoder"
+        android:background="@color/maucam">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông Báo"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize14"></TextView>
+
+        <ImageView
+            android:id="@+id/img_exitdialogrebuy"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@mipmap/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_top1_Dialog_rebuy_canceoder"
+        android:layout_below="@+id/top"
+        android:background="@color/mautrang">
+
+        <TextView
+            android:id="@+id/txt_Text_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:text="Bạn muốn mua lại sản phẩm ?"
+            android:textColor="@color/mauden"
+            android:textSize="@dimen/TextSize16"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_dialogRebuy_huy"
+                android:layout_width="@dimen/width_button_Dialog_rebuy_canceoder"
+                android:layout_height="@dimen/heith_button_Dialog_rebuy_canceoder"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:background="@drawable/test"
+                android:gravity="center"
+                android:text="Hủy"
+                android:textAllCaps="true"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12" />
+
+            <TextView
+                android:id="@+id/txt_dialogRebuy_chapnhan"
+                android:layout_width="@dimen/width_button_Dialog_rebuy_canceoder"
+                android:layout_height="@dimen/heith_button_Dialog_rebuy_canceoder"
+                android:layout_gravity="center"
+                android:background="@drawable/button_muahang"
+                android:gravity="center"
+                android:text="Chấp nhận"
+                android:textAllCaps="true"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

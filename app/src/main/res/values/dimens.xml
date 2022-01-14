@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Fragment_menu-->
+        <!--Fragment-->
+            <dimen name="heithOntop">50dp</dimen>
+            <dimen name="widthSearch_menu">225dp</dimen>
+            <dimen name="heithSearch_menu">33dp</dimen>
+            <dimen name="widthMess_cart">40dp</dimen>
+            <dimen name="heithMess_cart">40dp</dimen>
+            <dimen name="widthcontentMess_cart">15dp</dimen>
+            <dimen name="heithcontentMess_cart">15dp</dimen>
+            <dimen name="heithBanner_menu">100dp</dimen>
+            <dimen name="width_menu_Cap1">65dp</dimen>
+        <!--Item_menu_cap1-->
+            <dimen name="width_item_menu_cap1">65dp</dimen>
+            <dimen name="heith_item_menu_cap1">65dp</dimen>
+            <dimen name="heith_item_menu_cap1_icon">35dp</dimen>
+        <!--Item_menu_cap2-->
+            <dimen name="width_img_item_menu_cap2">45dp</dimen>
+            <dimen name="heith_img_item_menu_cap2">45dp</dimen>
+            <dimen name="radius_img_item_menu_cap2">45dp</dimen>
+            <dimen name="heith_content_item_menu_cap2">25dp</dimen>
+        <!--Item_sanpham-->
+            <dimen name="heith_img_Item_menu_sanpham">120dp</dimen>
+            <dimen name="width_img_Item_menu_sanpham">80dp</dimen>
+            <dimen name="heith_text_giaohangnhanh_item_menu_sanpham">11dp</dimen>
+            <dimen name="width_button_item_menu_sanpham">120dp</dimen>
+            <dimen name="heith_button_item_menu_sanpham">20dp</dimen>
+    <!--Fragment_Acount_login-->
+        <dimen name="heith_ontop_fragmentAcount_login">40dp</dimen>
+        <dimen name="heith_tt_acount_loggin">80dp</dimen>
+        <dimen name="width_avatar_acount_loggin">56dp</dimen>
+        <dimen name="heith_avatar_acount_loggin">64dp</dimen>
+        <dimen name="width_group_tt_acount_loggin">224dp</dimen>
+        <dimen name="width_iconCT_tt_acount_loggin">24dp</dimen>
+        <dimen name="heith_iconCT_tt_acount_loggin">24dp</dimen>
+        <dimen name="width_button_groupQLDh">64dp</dimen>
+        <dimen name="heith_button_groupQLDh">64dp</dimen>
+        <dimen name="heith_cardimg_button_groupQLDh">32dp</dimen>
+        <dimen name="width_cardimg_button_groupQLDh">32dp</dimen>
+        <dimen name="radius_cardimg_button_groupQLDh">32dp</dimen>
+        <dimen name="heith_textcontent_groupQLDh">64dp</dimen>
+        <dimen name="heith_text_content_group_acount_loggin">32dp</dimen>
+        <dimen name="heith_maKM_maGT_acount_loggin">64dp</dimen>
+        <dimen name="width_maKM_maGT_Cardimg_acount_loggin">48dp</dimen>
+        <dimen name="heith_maKM_maGT_Cardimg_acount_loggin">48dp</dimen>
+        <dimen name="width_maKM_maGT_img_acount_loggin">32dp</dimen>
+        <dimen name="heith_maKM_maGT_img_acount_loggin">32dp</dimen>
+        <dimen name="heith_icon_groupMXH_acount_loggin">32dp</dimen>
+        <dimen name="width_icon_groupMXH_acount_loggin">32dp</dimen>
+        <dimen name="width_button_logOut_account_loggin">215dp</dimen>
+        <dimen name="heith_button_logOut_account_loggin">40dp</dimen>
+    <!--Fragment_Account-->
+        <dimen name="heith_groupTT_fragmentAcount">56dp</dimen>
+        <dimen name="heith_ontop_fragmentAcount">40dp</dimen>
+        <dimen name="width_avatar_acount">45dp</dimen>
+        <dimen name="heith_avatar_acount">45dp</dimen>
+        <dimen name="width_icon_fragmentAccount">24dp</dimen>
+        <dimen name="heith_icon_fragmentAccount">24dp</dimen>
+        <dimen name="heith_textconten_fragmentAccount">28dp</dimen>
+        <dimen name="width_iconMXH_fragmentAccount">32dp</dimen>
+        <dimen name="heith_iconMXH_fragmentAccount">32dp</dimen>
+
+    <!--Main_activity-->
+        <dimen name="Margin_bottom_nav_item">45dp</dimen>
+        <dimen name="width_button_floatingButton_Main">48dp</dimen>
+        <dimen name="heith_button_floatingButton_Main">48dp</dimen>
+        <dimen name="Margin_left_right80">80dp</dimen>
+        <dimen name="Margin_160">160dp</dimen>
+        <dimen name="Margin_52">52dp</dimen>
+        <dimen name="Margin_104">104dp</dimen>
+        <dimen name="Margin_132">132dp</dimen>
+        <dimen name="size_icon_nav">23dp</dimen>
+    <!--Activity_FavoriteProduct-->
+        <dimen name="heith_ontop_activityFavoiteproduct">40dp</dimen>
+        <dimen name="width_iconback_activityFavoiteproduct">20dp</dimen>
+        <dimen name="heith_iconback_activityFavoiteproduct">25dp</dimen>
+        <dimen name="width_SpinKitView_activityFavoiteproduct">40dp</dimen>
+        <dimen name="heith_SpinKitView_activityFavoiteproduct">40dp</dimen>
+        <!--Item_FavoriteProduct-->
+            <dimen name="heith_item_FavoriteProduct">104dp</dimen>
+            <dimen name="width_img_Item_FavoriteProduct">80dp</dimen>
+            <dimen name="heith_img_Item_FavoriteProduct">104dp</dimen>
+            <dimen name="width_button_item_FavoriteProduct">24dp</dimen>
+            <dimen name="heith_button_item_FavoriteProduct">24dp</dimen>
+            <dimen name="width_SpinKitView_Item_activityFavoiteproduct">40dp</dimen>
+            <dimen name="heith_SpinKitView_Item_activityFavoiteproduct">40dp</dimen>
+    <!--Activity_ViewProduc-->
+        <dimen name="heith_ontop_activityViewproduct">40dp</dimen>
+        <dimen name="width_iconback_activityViewproduct">20dp</dimen>
+        <dimen name="heith_iconback_activityViewproduct">25dp</dimen>
+        <dimen name="width_SpinKitView_activityViewproduct">40dp</dimen>
+        <dimen name="heith_SpinKitView_activityViewproduct">40dp</dimen>
+        <!--Item_ViewProduc-->
+            <dimen name="heith_item_activityViewproduct">104dp</dimen>
+            <dimen name="width_img_Item_activityViewproduct">80dp</dimen>
+            <dimen name="heith_img_Item_activityViewproduct">104dp</dimen>
+            <dimen name="width_button_item_activityViewproduct">24dp</dimen>
+            <dimen name="heith_button_item_activityViewproduct">24dp</dimen>
+            <dimen name="width_SpinKitView_Item_activityViewproduct">40dp</dimen>
+            <dimen name="heith_SpinKitView_Item_activityViewproduct">40dp</dimen>
+    <!--Activity_Lateproduct-->
+        <dimen name="heith_ontop_activityLateproduct">40dp</dimen>
+        <dimen name="width_iconback_activityLateproduct">20dp</dimen>
+        <dimen name="heith_iconback_activityLateproduct">25dp</dimen>
+        <dimen name="width_SpinKitView_activityLateproduct">40dp</dimen>
+        <dimen name="heith_SpinKitView_activityLateproduct">40dp</dimen>
+        <!--Item_Lateproduct-->
+            <dimen name="heith_item_activityLateproduct">104dp</dimen>
+            <dimen name="width_img_Item_activityLateproduct">80dp</dimen>
+            <dimen name="heith_img_Item_activityLateproduct">104dp</dimen>
+            <dimen name="width_button_item_activityLateproduct">24dp</dimen>
+            <dimen name="heith_button_item_activityLateproduct">24dp</dimen>
+            <dimen name="width_SpinKitView_Item_activityLateproduct">40dp</dimen>
+            <dimen name="heith_SpinKitView_Item_activityLateproduct">40dp</dimen>
+    <!--AddressActivity-->
+        <dimen name="heith_ontop_AddressActivity">40dp</dimen>
+        <dimen name="width_iconback_AddressActivity">20dp</dimen>
+        <dimen name="heith_iconback_AddressActivity">25dp</dimen>
+        <dimen name="width_Button_AddressActivity">260dp</dimen>
+        <dimen name="heith_Button_AddressActivity">35dp</dimen>
+        <dimen name="width_contentaddress_AddressActivity">200dp</dimen>
+        <dimen name="width_iconmenu_AddressActivity">24dp</dimen>
+        <dimen name="heith_iconmenu_AddressActivity">24dp</dimen>
+    <!--Activity_AddANewAddress-->
+        <dimen name="heith_ontop_Activity_AddANewAddress">40dp</dimen>
+        <dimen name="width_iconback_Activity_AddANewAddress">20dp</dimen>
+        <dimen name="heith_iconback_Activity_AddANewAddress">25dp</dimen>
+        <dimen name="width_Button_Activity_AddANewAddress">260dp</dimen>
+        <dimen name="heith_Button_Activity_AddANewAddress">35dp</dimen>
+    <!--Activity_UpdateANewAddress-->
+        <dimen name="heith_ontop_Activity_UpdateANewAddress">40dp</dimen>
+        <dimen name="width_iconback_Activity_UpdateANewAddress">20dp</dimen>
+        <dimen name="heith_iconback_Activity_UpdateANewAddress">25dp</dimen>
+        <dimen name="width_Button_Activity_UpdateANewAddress">260dp</dimen>
+        <dimen name="heith_Button_Activity_UpdateANewAddress">35dp</dimen>
+    <!--Activity_Formofdelivery-->
+        <dimen name="heith_ontop_Activity_Formofdelivery">40dp</dimen>
+        <dimen name="width_iconback_Activity_Formofdelivery">20dp</dimen>
+        <dimen name="heith_iconback_Activity_Formofdelivery">25dp</dimen>
+        <dimen name="heith_option_buyproduct_Activity_Formofdelivery">40dp</dimen>
+        <dimen name="width_line_option_Activity_Formofdelivery">32dp</dimen>
+        <dimen name="width_check_option_Activity_Formofdelivery">24dp</dimen>
+        <dimen name="heith_check_option_Activity_Formofdelivery">24dp</dimen>
+        <dimen name="heith_group_address_Activity_Formofdelivery">120dp</dimen>
+        <dimen name="width_text_chon_Activity_Formofdelivery">64dp</dimen>
+        <dimen name="width_address_Activity_Formofdelivery">250dp</dimen>
+        <dimen name="width_button_Activity_Formofdelivery">143dp</dimen>
+        <dimen name="heith_button_Activity_Formofdelivery">35dp</dimen>
+    <!--Fragment_Home-->
+        <dimen name="heith_tophome_Fragment_Home">36dp</dimen>
+        <dimen name="heith_groupsearch_Fragment_Home">32dp</dimen>
+        <dimen name="width_txt_groupsearch_Fragment_Home">353dp</dimen>
+        <dimen name="width_icon_groupsearch_Fragment_Home">32dp</dimen>
+        <dimen name="heith_content_product_Fragment_Home">32dp</dimen>
+        <dimen name="heith_group_slide_Fragment_Home">160dp</dimen>
+        <dimen name="heith_slide_Fragment_Home">143dp</dimen>
+        <!--Item_list_promotion-->
+            <dimen name="width_Item_list_promotion_Item_list_promotion">250dp</dimen>
+            <dimen name="heith_Item_list_promotion_Item_list_promotion">120dp</dimen>
+            <dimen name="width_img_Item_list_promotion_Item_list_promotion">100dp</dimen>
+            <dimen name="width_nameproduct_Item_list_promotion_Item_list_promotion">110dp</dimen>
+            <dimen name="width_bottun_Item_list_promotion_Item_list_promotion">70dp</dimen>
+            <dimen name="heith_bottun_Item_list_promotion_Item_list_promotion">20dp</dimen>
+        <!--Item_favorite/view_Fragment_Home-->
+            <dimen name="width_itemFavoriteView_Fragment_Home">132dp</dimen>
+            <dimen name="heith_itemFavoriteView_Fragment_Home">165dp</dimen>
+            <dimen name="heith_img_itemFavoriteView_Fragment_Home">104dp</dimen>
+            <dimen name="width_nameproduct_itemFavoriteView_Fragment_Home">95dp</dimen>
+        <!--Item_listpromotion-->
+            <dimen name="width_Item_listpromotion_Fragment_Home">260dp</dimen>
+            <dimen name="heith_Item_listpromotion_Fragment_Home">120dp</dimen>
+            <dimen name="width_img_Item_listpromotion_Fragment_Home">110dp</dimen>
+            <dimen name="width_button_Item_listpromotion_Fragment_Home">80dp</dimen>
+            <dimen name="heith_button_Item_listpromotion_Fragment_Home">20dp</dimen>
+        <!--Item_Listcatory_productHome-->
+            <dimen name="heith_content_product_Item_Listcatory_productHome">32dp</dimen>
+            <!--Item_favorite/view_Fragment_Home-->
+                <dimen name="width_Item_Listcatory_itemFavoriteView_Fragment_Home">132dp</dimen>
+                <dimen name="heith_Item_Listcatory_itemFavoriteView_Fragment_Home">165dp</dimen>
+                <dimen name="heith_img_Item_Listcatory_itemFavoriteView_Fragment_Home">104dp</dimen>
+                <dimen name="width_nameproduct_Item_Listcatory_itemFavoriteView_Fragment_Home">95dp</dimen>
+    <!--Fragment_search-->
+        <dimen name="heith_ontop_Fragment_search">48dp</dimen>
+        <dimen name="width_groupsearch_Fragment_search">215dp</dimen>
+        <dimen name="heith_groupsearch_Fragment_search">32dp</dimen>
+        <dimen name="width_edittextsearch_Fragment_search">353dp</dimen>
+        <dimen name="width_icon_groupsearch_Fragment_search">32dp</dimen>
+        <dimen name="heith_content_product_Fragment_search">32dp</dimen>
+        <dimen name="heith_tensearch_Fragment_search">80dp</dimen>
+        <dimen name="width_ProgressBar_Fragment_search">40dp</dimen>
+        <dimen name="heith_ProgressBar_Fragment_search">40dp</dimen>
+        <!--Item_fragment_search-->
+            <dimen name="width_Item_fragment_search">146dp</dimen>
+            <dimen name="heith_Item_fragment_search">170dp</dimen>
+            <dimen name="heith_img_heith_Item_fragment_search">104dp</dimen>
+            <dimen name="width_nameproduct_Item_fragment_search">100dp</dimen>
+            <dimen name="width_button_Item_fragment_search">40dp</dimen>
+            <dimen name="heith_button_Item_fragment_search">20dp</dimen>
+    <!--Activity_viewcart-->
+        <dimen name="width_iconback_Activity_viewcart">20dp</dimen>
+        <dimen name="heith_iconback_Activity_viewcart">25dp</dimen>
+        <dimen name="heith_ontop_Activity_viewcart">40dp</dimen>
+        <dimen name="Margin_bottom_SwipeRefreshLayout_Activity_viewcart">90dp</dimen>
+        <dimen name="heith_groupgiamgia_Activity_viewcart">70dp</dimen>
+        <dimen name="width_edtgiamgia_Activity_viewcart">200dp</dimen>
+        <dimen name="Margin_top_groupthanhtien_Activity_viewcart">64dp</dimen>
+        <dimen name="width_button_Activity_viewcart">120dp</dimen>
+        <dimen name="heith_button_Activity_viewcart">34dp</dimen>
+        <dimen name="heith_layoutNullCart_Activity_viewcart">220dp</dimen>
+        <!--Item_Activity_viewcart-->
+            <dimen name="heith_item_Activity_viewcart">130dp</dimen>
+            <dimen name="width_Imgproduct_item_Activity_viewcart">95dp</dimen>
+            <dimen name="width_soluong_item_Activity_viewcart">52dp</dimen>
+    <!--activity_customerinformation-->
+        <dimen name="heith_ontop_activity_customerinformation">40dp</dimen>
+        <dimen name="width_iconback_activity_customerinformation">20dp</dimen>
+        <dimen name="heith_iconback_activity_customerinformation">25dp</dimen>
+        <dimen name="width_grouppass_activity_customerinformation">160dp</dimen>
+        <dimen name="width_txtpass_activity_customerinformation">115dp</dimen>
+        <dimen name="width_txtaddress_activity_customerinformation">170dp</dimen>
+    <!--activity_orderdetails-->
+        <dimen name="heith_ontop_activity_orderdetails">40dp</dimen>
+        <dimen name="width_iconback_activity_orderdetails">20dp</dimen>
+        <dimen name="heith_iconback_activity_orderdetails">25dp</dimen>
+        <dimen name="heith_txtGhichu_activity_orderdetails">120dp</dimen>
+        <dimen name="heith_txtlydohuy_activity_orderdetails">64dp</dimen>
+        <dimen name="heith_edtlydohuy_activity_orderdetails">64dp</dimen>
+        <dimen name="width_button_activity_orderdetails">218dp</dimen>
+        <dimen name="heith_button_activity_orderdetails">40dp</dimen>
+        <!--item_activity_orderdetails-->
+            <dimen name="heith_iitem_activity_orderdetails">80dp</dimen>
+            <dimen name="heith_img_item_activity_orderdetails">80dp</dimen>
+    <!--activity_electronicbill-->
+        <dimen name="heith_ontop_activity_electronicbill">40dp</dimen>
+        <dimen name="width_iconback_activity_electronicbill">20dp</dimen>
+        <dimen name="heith_iconback_activity_electronicbill">25dp</dimen>
+        <dimen name="heith_edtbox_activity_electronicbill">32dp</dimen>
+        <dimen name="MarginBottom_groupedtghichu">100dp</dimen>
+        <dimen name="heith_edtghichu_activity_electronicbill">155dp</dimen>
+        <dimen name="width_button_activity_electronicbill">120dp</dimen>
+        <dimen name="heith_button_activity_electronicbill">35dp</dimen>
+    <!--activity_customersupport-->
+        <dimen name="heith_ontop_activity_customersupport">40dp</dimen>
+        <dimen name="width_iconback_activity_customersupport">20dp</dimen>
+        <dimen name="heith_iconback_activity_customersupport">25dp</dimen>
+        <dimen name="width_imglogo_activity_customersupport">165dp</dimen>
+        <dimen name="heith_imglogo_activity_customersupport">120dp</dimen>
+        <dimen name="heith_text_activity_customersupport">45dp</dimen>
+    <!--activity_account-->
+        <dimen name="heith_ontop_activity_account">40dp</dimen>
+        <dimen name="width_iconback_activity_account">20dp</dimen>
+        <dimen name="heith_iconback_activity_account">25dp</dimen>
+        <dimen name="width_imglogo_activity_account">100dp</dimen>
+        <dimen name="heith_imglogo_activity_account">65dp</dimen>
+    <!--fragment_login-->
+        <dimen name="width_button_activity_account">240dp</dimen>
+        <dimen name="heith_button_activity_account">35dp</dimen>
+        <dimen name="heith_buttonggfb_activity_account">45dp</dimen>
+    <!--fragment_registrater-->
+        <dimen name="width_button_fragment_registrater">240dp</dimen>
+        <dimen name="heith_button_fragment_registrater">35dp</dimen>
+        <dimen name="Margin_padding_80">80dp</dimen>
+    <!--activity_seeproduct-->
+        <dimen name="heith_top_activity_seeproduct">30dp</dimen>
+        <dimen name="width_iconback_activity_seeproduct">20dp</dimen>
+        <dimen name="heith_iconback_activity_seeproduct">25dp</dimen>
+        <dimen name="heith_imgsanpham_activity_seeproduct">150dp</dimen>
+        <dimen name="heith_group_top10_activity_seeproduct">64dp</dimen>
+        <dimen name="width_button_top10_activity_seeproduct">56dp</dimen>
+        <dimen name="heith_groupreview_activity_seeproduct">110dp</dimen>
+        <dimen name="width_linereviewTK_activity_seeproduct">110dp</dimen>
+        <dimen name="width_grouptongsao_activity_seeproduct">82dp</dimen>
+        <dimen name="width_groupthongkesao_activity_seeproduct">80dp</dimen>
+        <dimen name="width_groupthongkedanhgia_activity_seeproduct">104dp</dimen>
+        <dimen name="width_buttonvietnx_activity_seeproduct">280dp</dimen>
+        <dimen name="heith_buttonvietnx_activity_seeproduct">40dp</dimen>
+        <dimen name="heith_webview_activity_seeproduct">400dp</dimen>
+        <dimen name="width_imgiconyeuthich_activity_seeproduct">40dp</dimen>
+        <dimen name="heith_imgiconyeuthich_activity_seeproduct">40dp</dimen>
+        <dimen name="width_buttonthemgh_activity_seeproduct">220dp</dimen>
+        <dimen name="heith_buttonthemgh_activity_seeproduct">40dp</dimen>
+        <!--Item_photos_activity_seeproduct-->
+            <dimen name="width_Item_photos_activity_seeproduct">110dp</dimen>
+            <dimen name="heith_Item_photos_activity_seeproduct">60dp</dimen>
+        <!--item_productrelation_activity_seeproduct-->
+            <dimen name="width_item_productrelation_activity_seeproduct">132dp</dimen>
+            <dimen name="heith_item_productrelation_activity_seeproduct">165dp</dimen>
+            <dimen name="heith_img_item_productrelation_activity_seeproducte">104dp</dimen>
+            <dimen name="width_nameproduct_item_productrelation_activity_seeproduct">90dp</dimen>
+        <!--item_productrelationmuacung_activity_seeproduct-->
+            <dimen name="width_item_productrelationmuacung_activity_seeproduct">132dp</dimen>
+            <dimen name="heith_item_productrelationmuacung_activity_seeproduct">165dp</dimen>
+            <dimen name="heith_img_item_productrelationmuacung_activity_seeproduct">104dp</dimen>
+            <dimen name="width_nameproduct_item_productrelationmuacung_activity_seeproduct">90dp</dimen>
+    <!--activity_seereview_product-->
+        <dimen name="heith_ontop_activity_seereview_product">40dp</dimen>
+    <!--activity_vietdanhgia-->
+        <dimen name="heith_ontop_activity_vietdanhgia">40dp</dimen>
+        <dimen name="width_iconback_activity_vietdanhgia">20dp</dimen>
+        <dimen name="heith_iconback_activity_vietdanhgia">25dp</dimen>
+        <dimen name="heith_text_title_writereview_activity_vietdanhgia">40dp</dimen>
+        <dimen name="heith_text_content_writereview_activity_vietdanhgia">150dp</dimen>
+        <dimen name="heith_camera_activity_vietdanhgia">60dp</dimen>
+        <dimen name="width_button_activity_vietdanhgia">250dp</dimen>
+        <dimen name="heith_button_activity_vietdanhgia">40dp</dimen>
+    <!--activity_allorder-->
+        <dimen name="heith_ontop_activity_allorder">40dp</dimen>
+        <dimen name="width_iconback_activity_allorder">20dp</dimen>
+        <dimen name="heith_iconback_activity_allorder">25dp</dimen>
+        <!--Item_vieworder_allorder_button-->
+        <dimen name="width_Item_vieworder_allorder_button">132dp</dimen>
+        <dimen name="heith_Item_vieworder_allorder_button">44dp</dimen>
+    <!--activity_payments-->
+        <dimen name="heith_top_activity_payments">40dp</dimen>
+        <dimen name="width_iconback_activity_payments">20dp</dimen>
+        <dimen name="heith_iconback_activity_payments">25dp</dimen>
+        <dimen name="heith_option_buyproduct_activity_payments">40dp</dimen>
+        <dimen name="width_line_option_activity_payments">32dp</dimen>
+        <dimen name="width_check_option_activity_payments">24dp</dimen>
+        <dimen name="heith_check_option_activity_payments">24dp</dimen>
+        <dimen name="heith_groupmgg_activity_payments">48dp</dimen>
+        <dimen name="width_edtmgg_activity_payments">180dp</dimen>
+        <dimen name="heith_edtmgg_activity_payments">35dp</dimen>
+        <dimen name="width_buttonmgg_activity_payments">90dp</dimen>
+        <dimen name="heith_buttonmgg_activity_payments">35dp</dimen>
+        <dimen name="heith_groupthanhtien_activity_payments">100dp</dimen>
+        <dimen name="heith_button_activity_payments">35dp</dimen>
+    <!--activity_orderconfirmation-->
+        <dimen name="heith_top_activity_orderconfirmation">40dp</dimen>
+        <dimen name="width_iconback_activity_orderconfirmation">20dp</dimen>
+        <dimen name="heith_iconback_activity_orderconfirmation">25dp</dimen>
+        <dimen name="heith_option_buyproduct_activity_orderconfirmation">40dp</dimen>
+        <dimen name="width_line_option_activity_orderconfirmation">32dp</dimen>
+        <dimen name="width_check_option_activity_orderconfirmation">24dp</dimen>
+        <dimen name="heith_check_option_activity_orderconfirmation">24dp</dimen>
+        <dimen name="heith_edtghichu_activity_orderconfirmation">80dp</dimen>
+        <dimen name="heith_groupthanhtien_activity_orderconfirmation">95dp</dimen>
+        <dimen name="heith_button_activity_orderconfirmation">35dp</dimen>
+        <!--Item_sanphamxacnahndonhang-->
+            <dimen name="heith_Item_sanphamxacnahndonhang">80dp</dimen>
+            <dimen name="width_imgproduct_Item_sanphamxacnahndonhang">70dp</dimen>
+    <!--Dialog-->
+        <!--addsanphamgiohang-->
+            <dimen name="heith_content_Dialog_addsanphamgiohang">50dp</dimen>
+            <dimen name="width_imgproduct_Dialog_addsanphamgiohang">80dp</dimen>
+            <dimen name="heith_imgproduct_Dialog_addsanphamgiohang">80dp</dimen>
+        <!--seepicture_product_imformation-->
+            <dimen name="heith_Dialog_seepicture_product_imformation">300dp</dimen>
+            <dimen name="heithnho_Dialog_seepicture_product_imformation">250dp</dimen>
+            <dimen name="heith_imgDialog_seepicture_product_imformation">220dp</dimen>
+        <!--rebuy_canceoder-->
+            <dimen name="heith_content_Dialog_rebuy_canceoder">40dp</dimen>
+            <dimen name="heith_top1_Dialog_rebuy_canceoder">120dp</dimen>
+            <dimen name="width_button_Dialog_rebuy_canceoder">120dp</dimen>
+            <dimen name="heith_button_Dialog_rebuy_canceoder">35dp</dimen>
+        <!--exitapp-->
+            <dimen name="heith_content_Dialog_exitapp">40dp</dimen>
+            <dimen name="heith_top1_Dialog_exitapp">105dp</dimen>
+            <dimen name="width_button_Dialog_exitapp">120dp</dimen>
+            <dimen name="heith_button_Dialog_exitapp">35dp</dimen>
+        <!--cartdelete-->
+            <dimen name="heith_content_Dialog_cartdelete">40dp</dimen>
+            <dimen name="heith_top1_Dialog_cartdelete">105dp</dimen>
+            <dimen name="width_button_Dialog_cartdelete">120dp</dimen>
+            <dimen name="heith_button_Dialog_cartdelete">35dp</dimen>
+        <!--order_screefull-->
+            <dimen name="heith_content_Dialog_order_screefull">40dp</dimen>
+            <dimen name="heith_top1_Dialog_order_screefull">120dp</dimen>
+            <dimen name="width_button_Dialog_order_screefull">120dp</dimen>
+            <dimen name="heith_button_Dialog_order_screefull">35dp</dimen>
+    <!--fragment_notification-->
+        <dimen name="width_group_menu_fragment_notification">80dp</dimen>
+        <dimen name="heith_button_width_group_menu_fragment_notification">120dp</dimen>
+    <!--Activiti_notification_detail-->
+        <dimen name="width_img_Activiti_notification_detail">80dp</dimen>
+        <dimen name="heith_group_img_name_Activiti_notification_detail">100dp</dimen>
+    <!--Activity_shareapp-->
+        <dimen name="heith_top_Activity_shareapp">40dp</dimen>
+        <dimen name="width_txt_linkshare_Activity_shareapp">175dp</dimen>
+        <dimen name="heith_txt_linkshare_Activity_shareapp">35dp</dimen>
+        <dimen name="heith_groupQRcode_Activity_shareapp">220dp</dimen>
+        <dimen name="width_img_QRcode_Activity_shareapp">160dp</dimen>
+        <dimen name="heith_img_QRcode_Activity_shareapp">160dp</dimen>
+    <!--Margin_padding-->
+        <dimen name="Margin_padding50">50dp</dimen>
+        <dimen name="Margin_padding49">49dp</dimen>
+        <dimen name="Margin_padding48">48dp</dimen>
+        <dimen name="Margin_padding47">47dp</dimen>
+        <dimen name="Margin_padding66">46dp</dimen>
+        <dimen name="Margin_padding45">45dp</dimen>
+        <dimen name="Margin_padding44">44dp</dimen>
+        <dimen name="Margin_padding43">43dp</dimen>
+        <dimen name="Margin_padding42">42dp</dimen>
+        <dimen name="Margin_padding41">41dp</dimen>
+        <dimen name="Margin_padding_am20">-20dp</dimen>
+        <dimen name="Margin_padding_am19">-19dp</dimen>
+        <dimen name="Margin_padding_am18">-18dp</dimen>
+        <dimen name="Margin_padding_am17">-17dp</dimen>
+        <dimen name="Margin_padding_am16">-16dp</dimen>
+        <dimen name="Margin_padding_am15">-15dp</dimen>
+        <dimen name="Margin_padding_am14">-14dp</dimen>
+        <dimen name="Margin_padding_am13">-13dp</dimen>
+        <dimen name="Margin_padding_am12">-12dp</dimen>
+        <dimen name="Margin_padding_am11">-11dp</dimen>
+        <dimen name="Margin_padding40">40dp</dimen>
+        <dimen name="Margin_padding39">39dp</dimen>
+        <dimen name="Margin_padding38">38dp</dimen>
+        <dimen name="Margin_padding37">37dp</dimen>
+        <dimen name="Margin_padding36">36dp</dimen>
+        <dimen name="Margin_padding35">35dp</dimen>
+        <dimen name="Margin_padding34">34dp</dimen>
+        <dimen name="Margin_padding33">33dp</dimen>
+        <dimen name="Margin_padding32">32dp</dimen>
+        <dimen name="Margin_padding31">31dp</dimen>
+        <dimen name="Margin_padding_am10">-10dp</dimen>
+        <dimen name="Margin_padding_am9">-9dp</dimen>
+        <dimen name="Margin_padding_am8">-8dp</dimen>
+        <dimen name="Margin_padding_am7">-7dp</dimen>
+        <dimen name="Margin_padding_am6">-6dp</dimen>
+        <dimen name="Margin_padding_am5">-5dp</dimen>
+        <dimen name="Margin_padding_am4">-4dp</dimen>
+        <dimen name="Margin_padding_am3">-3dp</dimen>
+        <dimen name="Margin_padding_am2">-2dp</dimen>
+        <dimen name="Margin_padding_am1">-1dp</dimen>
+        <dimen name="Margin_padding1">1dp</dimen>
+        <dimen name="Margin_padding2">2dp</dimen>
+        <dimen name="Margin_padding3">3dp</dimen>
+        <dimen name="Margin_padding4">4dp</dimen>
+        <dimen name="Margin_padding5">5dp</dimen>
+        <dimen name="Margin_padding6">6dp</dimen>
+        <dimen name="Margin_padding7">7dp</dimen>
+        <dimen name="Margin_padding8">8dp</dimen>
+        <dimen name="Margin_padding9">9dp</dimen>
+        <dimen name="Margin_padding10">10dp</dimen>
+        <dimen name="Margin_padding11">11dp</dimen>
+        <dimen name="Margin_padding12">12dp</dimen>
+        <dimen name="Margin_padding13">13dp</dimen>
+        <dimen name="Margin_padding14">14dp</dimen>
+        <dimen name="Margin_padding15">15dp</dimen>
+        <dimen name="Margin_padding16">16dp</dimen>
+        <dimen name="Margin_padding17">17dp</dimen>
+        <dimen name="Margin_padding18">18dp</dimen>
+        <dimen name="Margin_padding19">19dp</dimen>
+        <dimen name="Margin_padding20">20dp</dimen>
+        <dimen name="Margin_padding21">21dp</dimen>
+        <dimen name="Margin_padding22">22dp</dimen>
+        <dimen name="Margin_padding23">23dp</dimen>
+        <dimen name="Margin_padding24">24dp</dimen>
+        <dimen name="Margin_padding25">25dp</dimen>
+        <dimen name="Margin_padding26">26dp</dimen>
+        <dimen name="Margin_padding27">27dp</dimen>
+        <dimen name="Margin_padding28">28dp</dimen>
+        <dimen name="Margin_padding29">29dp</dimen>
+        <dimen name="Margin_padding30">30dp</dimen>
+    <!--TextSize-->
+        <dimen name="TextSize1">1sp</dimen>
+        <dimen name="TextSize2">2sp</dimen>
+        <dimen name="TextSize3">3sp</dimen>
+        <dimen name="TextSize4">4sp</dimen>
+        <dimen name="TextSize5">5sp</dimen>
+        <dimen name="TextSize6">6sp</dimen>
+        <dimen name="TextSize7">7sp</dimen>
+        <dimen name="TextSize8">8sp</dimen>
+        <dimen name="TextSize9">9sp</dimen>
+        <dimen name="TextSize10">10sp</dimen>
+        <dimen name="TextSize11">11sp</dimen>
+        <dimen name="TextSize12">12sp</dimen>
+        <dimen name="TextSize13">13sp</dimen>
+        <dimen name="TextSize14">14sp</dimen>
+        <dimen name="TextSize15">15sp</dimen>
+        <dimen name="TextSize16">16sp</dimen>
+        <dimen name="TextSize17">17sp</dimen>
+        <dimen name="TextSize18">18sp</dimen>
+        <dimen name="TextSize19">19sp</dimen>
+        <dimen name="TextSize20">20sp</dimen>
+        <dimen name="TextSize21">21sp</dimen>
+        <dimen name="TextSize22">22sp</dimen>
+        <dimen name="TextSize23">23sp</dimen>
+        <dimen name="TextSize24">24sp</dimen>
+        <dimen name="TextSize25">25sp</dimen>
+        <dimen name="TextSize26">26sp</dimen>
+        <dimen name="TextSize27">27sp</dimen>
+        <dimen name="TextSize28">28sp</dimen>
+        <dimen name="TextSize29">29sp</dimen>
+        <dimen name="TextSize30">30sp</dimen>
+    <!--dùng chung-->
+        <dimen name="width_icon">24dp</dimen>
+        <dimen name="heith_icon">24dp</dimen>
+        <dimen name="width_progressbar">40dp</dimen>
+        <dimen name="heith_progressbar">40dp</dimen>
+</resources>

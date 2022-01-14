@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@color/maucam"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_Dialog_order_screefull">
+        <TextView
+            android:text="Thông Báo"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/TextSize15"
+            android:textColor="@color/mautrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#F6F6F6"
+        android:layout_below="@+id/top"
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_top1_Dialog_order_screefull">
+        <TextView
+            android:id="@+id/txt_ok"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:layout_below="@+id/top3"
+            android:text="Đơn Hàng Của Bạn Đã Được \n \n NguyenHaFood Tiếp Nhận"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/TextSize14"
+            android:textColor="@color/maudennhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <Button
+            android:id="@+id/accept_dialog_orderaccpect"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/mauden"
+            android:text="Chấp Nhận"
+            android:textSize="@dimen/TextSize12"
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:background="@drawable/textbox1"
+            android:layout_marginBottom="@dimen/Margin_padding15"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/width_button_Dialog_order_screefull"
+            android:layout_height="@dimen/heith_button_Dialog_order_screefull"></Button>
+    </RelativeLayout>
+</RelativeLayout>

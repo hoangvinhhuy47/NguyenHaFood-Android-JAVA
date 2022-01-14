@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/default_adress_chose"
+        android:enabled="true"
+        android:title="Địa Chỉ Mặc Định" />
+    <item android:id="@+id/setting_adress"
+        android:enabled="true"
+        android:title="Chỉnh Sửa" />
+    <item android:id="@+id/delete_adress"
+        android:enabled="true"
+        android:title="Xóa"/>
+
+
+</menu>

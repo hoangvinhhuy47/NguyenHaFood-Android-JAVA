@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <RelativeLayout
+        android:id="@+id/ontop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_ontop_Fragment_search"
+        android:background="@color/maucam">
+        <RelativeLayout
+            android:id="@+id/search_group"
+            android:layout_width="@dimen/width_groupsearch_Fragment_search"
+            android:layout_height="@dimen/heith_groupsearch_Fragment_search"
+            android:layout_below="@+id/tophome"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/Margin_padding12"
+            android:layout_marginTop="@dimen/Margin_padding4"
+            android:layout_marginRight="@dimen/Margin_padding12"
+            tools:ignore="Orientation,RtlCompat"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/searchview"
+                android:layout_width="@dimen/width_edittextsearch_Fragment_search"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/Margin_padding27"
+                android:layout_marginBottom="0dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:background="@drawable/textbox3"
+                android:gravity="left|center"
+                android:hint="Tìm Kiếm"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/Margin_padding12"
+                android:imeOptions="actionDone"
+                android:textSize="@dimen/TextSize14"></EditText>
+
+            <RelativeLayout
+                android:layout_height="@dimen/width_icon_groupsearch_Fragment_search"
+                android:layout_width="@dimen/heith_content_product_Fragment_search"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/textbox2">
+                <ImageView
+                    android:id="@+id/btm_search"
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/search_black"
+                    android:layout_marginRight="@dimen/Margin_padding4"></ImageView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding5"
+            android:gravity="center">
+
+
+
+            <RelativeLayout
+                android:id="@+id/cart_see"
+                android:layout_width="@dimen/widthMess_cart"
+                android:layout_height="@dimen/heithMess_cart">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/viewcard_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/cart" />
+
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="@dimen/widthcontentMess_cart"
+                        android:layout_height="@dimen/heithcontentMess_cart"
+                        android:layout_gravity="right|end|top"
+                        android:layout_marginTop="@dimen/Margin_padding2"
+                        android:layout_marginEnd="@dimen/Margin_padding1"
+                        android:layout_marginRight="@dimen/Margin_padding_am8"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="@dimen/Margin_padding2"
+                        android:text="0"
+                        android:textColor="@color/maudo"
+                        android:textSize="@dimen/TextSize8" />
+
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/mauxam"
+        android:layout_below="@id/ontop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding1"
+        tools:ignore="Orientation"
+        android:layout_marginRight="@dimen/Margin_padding8"
+        android:layout_marginLeft="@dimen/Margin_padding8"></LinearLayout>
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_below="@+id/top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_productsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/Margin_padding4"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="@dimen/width_ProgressBar_Fragment_search"
+        android:layout_height="@dimen/heith_ProgressBar_Fragment_search"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/progressbar1"
+        android:layout_marginTop="@dimen/Margin_padding24">
+    </ProgressBar>
+</RelativeLayout>

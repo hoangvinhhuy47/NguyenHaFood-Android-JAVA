@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud_recy_home">
+
+        <RelativeLayout
+            android:id="@+id/rlv_viewfavorite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_content_product_Item_Listcatory_productHome"
+            android:background="@drawable/backgroud_catoryroot_home">
+
+            <TextView
+                android:id="@+id/name_lstproduct_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding12"
+                android:gravity="center"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize14"
+                tools:ignore="RtlCompat"></TextView>
+
+            <TextView
+                android:id="@+id/seemore_lstprodcut_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:gravity="center"
+                android:text="Xem Thêm  "
+                android:textColor="@color/maucam"
+                android:textSize="@dimen/TextSize10"></TextView>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_lstproduct_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlv_viewfavorite"
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:layout_marginRight="@dimen/Margin_padding4"
+            android:layout_marginBottom="@dimen/Margin_padding8"></androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/lin_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding10"
+            android:layout_below="@+id/rcl_lstproduct_home"
+            android:background="#ECEAEA"
+            tools:ignore="Orientation"></LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

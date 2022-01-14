@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/Margin_padding24"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+   <LinearLayout
+       android:layout_centerHorizontal="true"
+       android:id="@+id/top"
+       android:layout_marginTop="@dimen/Margin_padding16"
+       android:layout_width="wrap_content"
+
+       android:layout_height="wrap_content">
+       <RatingBar
+           android:id="@+id/raiting"
+           android:layout_centerInParent="true"
+           style="@style/Widget.AppCompat.RatingBar.Indicator"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:isIndicator="false"
+           android:numStars="5"
+           android:rating="0"
+           android:stepSize="0.1"
+           android:layout_gravity="center">
+       </RatingBar>
+   </LinearLayout>
+    <Button
+        android:id="@+id/btnd_danhgia"
+        android:text="Đánh Giá Cụ Thể"
+        android:textColor="@color/mautrang"
+        android:textSize="@dimen/TextSize14"
+        android:background="@drawable/button_muahang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Margin_padding24"
+        android:layout_below="@+id/top"
+        android:layout_width="@dimen/width_button_Dialog_exitapp"
+        android:layout_height="@dimen/heith_button_Dialog_exitapp"></Button>
+    <Button
+        android:id="@+id/btn_gui"
+        android:text="Gữi"
+        android:textColor="@color/mautrang"
+        android:textSize="@dimen/TextSize12"
+        android:background="@drawable/button_muahang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Margin_padding24"
+        android:layout_below="@+id/btnd_danhgia"
+        android:layout_width="@dimen/width_button_Dialog_exitapp"
+        android:layout_height="@dimen/heith_button_Dialog_exitapp"></Button>
+
+</RelativeLayout>

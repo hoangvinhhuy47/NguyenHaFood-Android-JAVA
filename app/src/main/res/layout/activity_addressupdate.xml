@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F1"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_ontop_Activity_AddANewAddress"
+            android:background="@color/maucam">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/width_iconback_Activity_AddANewAddress"
+                android:layout_height="@dimen/heith_iconback_Activity_AddANewAddress"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:background="@mipmap/back"></ImageView>
+
+            <TextView
+
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Cập nhật địa chỉ"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"></TextView>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_marginBottom="@dimen/Margin_padding49">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/top1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Tên Người nhận"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/name_user_addressupdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@id/group1"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="Họ và tên địa chỉ người nhận..."
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/Margin_padding16">
+
+                        <TextView
+                            android:id="@+id/lengh_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/maucam"
+                            android:textSize="@dimen/TextSize12"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textColor="@color/maucam"
+                            android:textSize="@dimen/TextSize12"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textColor="@color/maucam"
+                            android:textSize="@dimen/TextSize12"></TextView>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top1"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Số điện thoại"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/phone_updateaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@id/group2"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="VD: 0902 819 653"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"></EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top2"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Tỉnh / Thành phố"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@id/group3"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/city_address_update"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableEnd="@mipmap/down"
+                            android:hint="Nhập Địa Chỉ Nhận Hàng"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatSpinner>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top4"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Quận / Huyện"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@+id/group4"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/alldictric_updateadresss"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableEnd="@mipmap/down"
+                            android:hint="Chọn Quận Huyện"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatSpinner>
+                    </RelativeLayout>
+                </RelativeLayout>
+                ////
+                <RelativeLayout
+                    android:id="@+id/top55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top5"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Phường/ Xã"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@+id/group44"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/alldictric_updateward"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableEnd="@mipmap/down"
+                            android:hint="Chọn Quận Huyện"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatSpinner>
+                    </RelativeLayout>
+                </RelativeLayout>
+                //
+
+
+                <RelativeLayout
+                    android:id="@+id/top6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top55"
+                    android:layout_marginTop="@dimen/Margin_padding16"
+                    android:layout_marginBottom="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Địa chỉ"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/wards_updateadress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@id/group5"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="VD: 140/7 Bis Kỳ Đồng"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"
+                        tools:ignore="RtlCompat"></EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top6"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Địa Chỉ Nhận Hàng"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"></TextView>
+
+                    <EditText
+                        android:id="@+id/updateadresss"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding45"
+                        android:layout_below="@id/text3"
+                        android:layout_marginLeft="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding16"
+                        android:background="@drawable/backgroud_edt"
+                        android:enabled="false"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:paddingRight="@dimen/Margin_padding5"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"></EditText>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/top7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding1"
+                    android:layout_below="@id/top6"
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:background="@color/mauxam"
+                    tools:ignore="Orientation"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/top8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top3"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:layout_marginTop="@dimen/Margin_padding8">
+
+                    <RadioButton
+                        android:id="@+id/default_updateaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đặt Làm Địa Chỉ Mặc Định"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_update_adress"
+            android:layout_width="@dimen/width_Button_Activity_AddANewAddress"
+            android:layout_height="@dimen/heith_Button_Activity_AddANewAddress"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/Margin_padding7"
+            android:layout_marginBottom="@dimen/Margin_padding7"
+            android:background="@drawable/button_muahang"
+            android:text="Cập nhật địa chỉ"
+            android:textColor="@color/mautrang"></Button>
+    </RelativeLayout>
+</RelativeLayout>

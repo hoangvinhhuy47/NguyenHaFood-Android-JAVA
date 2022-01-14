@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/maucam"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/textdanhgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"></TextView>
+
+    <ImageView
+        android:layout_width="@dimen/width_icon"
+        android:layout_height="@dimen/heith_icon"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/down"></ImageView>
+</RelativeLayout>

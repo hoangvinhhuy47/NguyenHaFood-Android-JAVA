@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainrl"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <FrameLayout
+        android:id="@+id/nav_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/Margin_padding45"
+        tools:ignore="RtlCompat"></FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/website"
+        android:layout_width="@dimen/width_button_floatingButton_Main"
+        android:layout_height="@dimen/heith_button_floatingButton_Main"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/Margin_left_right80"
+        android:layout_marginTop="@dimen/Margin_160"
+        android:layout_marginRight="@dimen/Margin_padding8"
+        android:layout_marginBottom="@dimen/Margin_52"
+        android:backgroundTint="@color/mautrang"
+        android:src="@mipmap/website"
+        app:fabSize="auto"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/linkfacebook"
+        android:layout_width="@dimen/width_button_floatingButton_Main"
+        android:layout_height="@dimen/heith_button_floatingButton_Main"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/Margin_left_right80"
+        android:layout_marginBottom="@dimen/Margin_52"
+        android:backgroundTint="@color/mautrang"
+        android:src="@drawable/facebook"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/linkmess"
+        android:layout_width="@dimen/width_button_floatingButton_Main"
+        android:layout_height="@dimen/heith_button_floatingButton_Main"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/Margin_left_right80"
+        android:layout_marginBottom="@dimen/Margin_104"
+        android:backgroundTint="@color/mautrang"
+        android:src="@mipmap/messgee"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/linkzalo"
+        android:layout_width="@dimen/width_button_floatingButton_Main"
+        android:layout_height="@dimen/heith_button_floatingButton_Main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/Margin_left_right80"
+        android:layout_marginBottom="@dimen/Margin_104"
+        android:backgroundTint="@color/mautrang"
+        android:src="@drawable/zalo"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shareapp"
+        android:layout_width="@dimen/width_button_floatingButton_Main"
+        android:layout_height="@dimen/heith_button_floatingButton_Main"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/Margin_padding7"
+        android:layout_marginRight="@dimen/Margin_padding7"
+        android:layout_marginBottom="@dimen/Margin_132"
+        android:backgroundTint="@color/mautrang"
+        android:src="@drawable/connect"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchacti"
+        android:layout_width="@dimen/width_button_floatingButton_Main"
+        android:layout_height="@dimen/heith_button_floatingButton_Main"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/Margin_padding7"
+        android:layout_marginRight="@dimen/Margin_padding7"
+        android:layout_marginBottom="@dimen/Margin_left_right80"
+        android:backgroundTint="@color/mautrang"
+        android:src="@mipmap/search_black"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/space"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:active_item_color="#ffa502"
+        app:centre_button_color="#FFFFFF"
+        app:inactive_item_color="@color/maudennhat"
+        app:inactive_centre_button_icon_color="#53C7FB"
+        app:space_background_color="#ffffff"
+        app:space_item_icon_only_size="@dimen/size_icon_nav"
+        app:space_item_icon_size="@dimen/space_item_icon_default_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E3E3E3">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_ontop_activity_orderdetails"
+        android:background="@color/maucam"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_back_newsdetail"
+                android:layout_width="@dimen/width_iconback_activity_orderdetails"
+                android:layout_height="@dimen/heith_iconback_activity_orderdetails"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding4"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:background="@mipmap/back"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chi tiết tin"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding5"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="@dimen/widthMess_cart"
+                android:layout_height="@dimen/heithMess_cart"
+                android:layout_marginRight="@dimen/Margin_padding_am3">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/search" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/see_cart_newsdetail"
+                android:layout_width="@dimen/widthMess_cart"
+                android:layout_height="@dimen/heithMess_cart">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/view_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/cart" />
+
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="@dimen/widthcontentMess_cart"
+                        android:layout_height="@dimen/heithcontentMess_cart"
+                        android:layout_gravity="right|end|top"
+                        android:layout_marginTop="@dimen/Margin_padding2"
+                        android:layout_marginEnd="@dimen/Margin_padding1"
+                        android:layout_marginRight="@dimen/Margin_padding_am8"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="@dimen/Margin_padding2"
+                        android:text="0"
+                        android:textColor="@color/maudo"
+                        android:textSize="@dimen/TextSize8" />
+
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scl_orderdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/top4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding3"
+                android:layout_marginTop="@dimen/Margin_padding3"
+                android:layout_marginRight="@dimen/Margin_padding3"
+                app:cardCornerRadius="@dimen/Margin_padding5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mautrang"
+                    android:paddingBottom="@dimen/Margin_padding6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_group_img_name_Activiti_notification_detail"
+                        android:layout_margin="@dimen/Margin_padding5">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_imgnew"
+                            android:layout_width="@dimen/width_img_Activiti_notification_detail"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:id="@+id/img_news"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </androidx.cardview.widget.CardView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding5"
+                            android:layout_toRightOf="@+id/card_imgnew">
+
+                            <TextView
+                                android:id="@+id/caption_notifinewsdetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="left|center"
+                                android:maxLines="2"
+                                android:text="Cách nấu mì tôm kim chi nóng hổi cho bữa sáng"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize15"></TextView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/caption_notifinewsdetail"
+                                android:layout_marginLeft="@dimen/Margin_padding5"
+                                android:layout_marginTop="@dimen/Margin_padding10"
+                                android:layout_marginRight="@dimen/Margin_padding5">
+
+                                <LinearLayout
+                                    android:id="@+id/group_viewcou"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/groupnd"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginRight="@dimen/Margin_padding10">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/Margin_padding18"
+                                        android:layout_height="@dimen/Margin_padding18"
+                                        android:layout_marginRight="@dimen/Margin_padding5"
+                                        android:background="@drawable/eye_showpass" />
+
+                                    <TextView
+                                        android:id="@+id/viewcount_notification_detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:ellipsize="end"
+                                        android:gravity="left|center"
+                                        android:maxLines="2"
+                                        android:text="99"
+                                        android:textColor="@color/mauxam"
+                                        android:textSize="@dimen/TextSize12"></TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/groupnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/Margin_padding5"
+                                    android:layout_marginBottom="@dimen/Margin_padding10">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/Margin_padding18"
+                                        android:layout_height="@dimen/Margin_padding18"
+                                        android:layout_marginRight="@dimen/Margin_padding5"
+                                        android:background="@drawable/calendar" />
+
+                                    <TextView
+                                        android:id="@+id/date_notifinews_detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:ellipsize="end"
+                                        android:gravity="left|center"
+                                        android:maxLines="2"
+                                        android:text="00:00, 21/08/2020"
+                                        android:textColor="@color/mauxam"
+                                        android:textSize="@dimen/TextSize12"></TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/top5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/top4"
+                android:layout_marginLeft="@dimen/Margin_padding3"
+                android:layout_marginTop="@dimen/Margin_padding5"
+                android:layout_marginRight="@dimen/Margin_padding3"
+                android:layout_marginBottom="@dimen/Margin_padding3"
+                android:background="@color/mautrang"
+                app:cardCornerRadius="@dimen/Margin_padding5">
+
+                <WebView
+                    android:id="@+id/longder_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></WebView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_orderdetail"
+        android:layout_width="@dimen/width_progressbar"
+        android:layout_height="@dimen/heith_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"></ProgressBar>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayoutorderdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:background="@drawable/backgourndsimmer"
+        android:visibility="gone"></com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>

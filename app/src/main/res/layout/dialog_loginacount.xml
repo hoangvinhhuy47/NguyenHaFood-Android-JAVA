@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/button"
+    android:layout_margin="@dimen/Margin_padding8"
+    android:paddingBottom="@dimen/Margin_padding16">
+
+    <LinearLayout
+        android:id="@+id/abca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin_padding8"
+        android:layout_centerHorizontal="true"
+        android:background="@color/maucam"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Báo "
+            android:textSize="@dimen/TextSize15"
+            android:textColor="@color/mautrang"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/texterro"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/Margin_padding8"
+        android:layout_below="@id/abca"
+        android:textColor="@color/mauden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Bạn Vui Lòng Đăng Nhập  \n \n Để Thực Hiện Nhé!"
+        android:gravity="center"
+        android:textSize="@dimen/TextSize14" />
+    <Button
+        android:id="@+id/dialog_ok"
+        android:padding="15dp"
+        android:text="Chấp Nhận"
+        android:textSize="@dimen/TextSize13"
+        android:background="@drawable/button_seeview"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/texterro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/top1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_ontop_activity_customerinformation">
+
+                <ImageView
+                    android:id="@+id/iconbackalloder"
+                    android:layout_width="@dimen/width_iconback_activity_customerinformation"
+                    android:layout_height="@dimen/heith_iconback_activity_customerinformation"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginTop="@dimen/Margin_padding8"
+                    android:background="@mipmap/back"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Margin_padding8"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/search"
+                        android:layout_width="@dimen/widthMess_cart"
+                        android:layout_height="@dimen/heithMess_cart"
+                        android:layout_marginRight="@dimen/Margin_padding_am3">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/search" />
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/viewcart"
+                        android:layout_width="@dimen/widthMess_cart"
+                        android:layout_height="@dimen/heithMess_cart">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/cart" />
+
+                            <TextView
+                                android:id="@+id/cart_badge"
+                                android:layout_width="@dimen/widthcontentMess_cart"
+                                android:layout_height="@dimen/heithcontentMess_cart"
+                                android:layout_gravity="right|end|top"
+                                android:layout_marginTop="@dimen/Margin_padding2"
+                                android:layout_marginEnd="@dimen/Margin_padding1"
+                                android:layout_marginRight="@dimen/Margin_padding_am8"
+                                android:background="@drawable/badge_background"
+                                android:gravity="center"
+                                android:padding="@dimen/Margin_padding2"
+                                android:text="0"
+                                android:textColor="@color/maudo"
+                                android:textSize="@dimen/TextSize8" />
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="Thông tin khách hàng"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize13" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_marginBottom="@dimen/Margin_padding45"
+            android:layout_below="@id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Margin_padding3"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/hoten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/Margin_padding3"
+                        android:background="@drawable/button">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="Họ và Tên khách hàng: "
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <TextView
+                            android:id="@+id/txt_hovaten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="Võ Văn Sáng"
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hoten"
+                        android:layout_margin="@dimen/Margin_padding3"
+                        android:background="@drawable/button">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="UserName: "
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <TextView
+                            android:id="@+id/txt_username_tt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:layout_toRightOf="@+id/txt_hoten"
+                            android:text="ABC"
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/password"
+                        android:layout_margin="@dimen/Margin_padding3"
+                        android:background="@drawable/button">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="Email: "
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <TextView
+                            android:id="@+id/txt_email_tt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:layout_toRightOf="@+id/txt_hoten"
+                            android:inputType="textEmailAddress"
+                            android:text="Khaithien11245@gmail.com"
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email"
+                        android:layout_margin="@dimen/Margin_padding3"
+                        android:background="@drawable/button">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="Phone: "
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <TextView
+                            android:id="@+id/txt_phonenumber_tt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:layout_toRightOf="@+id/txt_hoten"
+                            android:inputType="phone"
+                            android:text="0394988071"
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_margin="@dimen/Margin_padding3"
+                        android:background="@drawable/button">
+
+                        <TextView
+                            android:id="@+id/sasasa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="Password: "
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/width_grouppass_activity_customerinformation"
+                            android:layout_height="@dimen/Margin_padding40"
+                            android:layout_marginTop="@dimen/Margin_padding4"
+                            android:layout_marginBottom="@dimen/Margin_padding4"
+                            android:layout_toRightOf="@+id/sasasa"
+                            android:background="@drawable/layout_buton">
+
+                            <TextView
+                                android:id="@+id/txt_passwordtt"
+                                android:layout_width="@dimen/width_txtpass_activity_customerinformation"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/Margin_padding4"
+                                android:inputType="textPassword"
+                                android:maxLines="2"
+                                android:paddingLeft="@dimen/Margin_padding4"
+                                android:text="VG_000090"
+                                android:textColor="@color/maudennhat"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <ImageView
+                                android:id="@+id/icon_eyes_password"
+                                android:layout_width="@dimen/width_icon"
+                                android:layout_height="@dimen/heith_icon"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/Margin_padding8"
+                                android:background="@drawable/eye_showpass" />
+                        </RelativeLayout>
+
+
+                        <!--                    <TextView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_centerVertical="true"-->
+                        <!--                        android:layout_marginRight="@dimen/Margin_padding8"-->
+                        <!--                        android:text="Thay đổi"-->
+                        <!--                        android:textColor="@color/maucam"-->
+                        <!--                        android:textSize="@dimen/TextSize12"-->
+
+                        <!--                        />-->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phonenumber"
+                        android:layout_margin="@dimen/Margin_padding3"
+                        android:background="@drawable/button">
+
+                        <TextView
+                            android:id="@+id/dfdfd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:text="Địa chỉ: "
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="@dimen/width_txtaddress_activity_customerinformation"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/Margin_padding12"
+                            android:layout_toRightOf="@+id/dfdfd"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:padding="@dimen/Margin_padding8"
+                            android:text="11/29 Dương Đức Hiền, phường Tây Thạnh, quận Tân Phú, TP.HCM"
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12" />
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/txt_thay_DC"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_centerVertical="true"-->
+                        <!--                        android:layout_marginTop="@dimen/Margin_padding12"-->
+                        <!--                        android:layout_marginRight="@dimen/Margin_padding8"-->
+                        <!--                        android:text="Thay đổi"-->
+                        <!--                        android:textColor="@color/maucam"-->
+                        <!--                        android:textSize="@dimen/TextSize12"-->
+
+                        <!--                        />-->
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:background="#FFF7DE"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding45">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="@dimen/Margin_padding20"
+                    android:layout_width="@dimen/heith_item_Activity_viewcart"
+                    android:layout_height="@dimen/Margin_padding35"
+                    android:text="Hủy"
+                    android:background="@drawable/button"
+                    android:textColor="@color/maucam"
+                    android:textSize="@dimen/TextSize12"/>
+                <Button
+                    android:layout_width="@dimen/heith_item_Activity_viewcart"
+                    android:layout_height="@dimen/Margin_padding35"
+                    android:text="Cập nhật"
+                    android:background="@drawable/button_muahang"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize12"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

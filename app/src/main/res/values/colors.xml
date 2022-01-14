@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#F8EAC1</color>
+    <color name="mauden">#000000</color>
+    <color name="maudennhat">#222121</color>
+    <color name="maucam">#F4B566</color>
+    <color name="maucamnhat">#ffcc00</color>
+    <color name="mautrang">#FFFFFF</color>
+    <color name="mauxanh">#0202D5</color>
+    <color name="mauxam">#A8A7A7</color>
+    <color name="mautim">#E61FC5</color>
+    <color name="maudo">#CA0000</color>
+    <color name="maunen">#ECECEC</color>
+    <color name="mauthanhnav">#F8F7F5</color>
+    <color name="mautrangxam">#ECECEC</color>
+    <color name="mauxanhluc">#37853A</color>
+    <color name="mauvangnhat">#EFECCC</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+<TextView
+    android:gravity="center"
+    android:textColor="@color/mauden"
+    android:id="@+id/btn_promotion_home"
+    android:background="@drawable/button"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></TextView>
+</RelativeLayout>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/Margin_padding5">
+
+        <RelativeLayout
+
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_top_activity_payments"
+            android:background="@color/maucam">
+
+            <ImageView
+                android:id="@+id/back_hinhthucthanhtoan"
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/heith_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:background="@mipmap/back"></ImageView>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:text="Hình Thức Thanh Toán"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"></TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_option_buyproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heith_option_buyproduct_activity_payments"
+            android:layout_below="@+id/top"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/Margin_padding24">
+
+            <LinearLayout
+                android:layout_width="@dimen/width_line_option_activity_payments"
+                android:layout_height="@dimen/Margin_padding4"
+                android:layout_gravity="center"
+                android:background="@color/maucam"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_backviewcart"
+                android:layout_width="@dimen/width_check_option_activity_payments"
+                android:layout_height="@dimen/heith_check_option_activity_payments"
+                android:layout_gravity="center"
+                android:background="@drawable/checked"></ImageView>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_line_option_activity_payments"
+                android:layout_height="@dimen/Margin_padding4"
+                android:layout_gravity="center"
+                android:background="@color/maucam"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_backform_delivery"
+
+                android:layout_width="@dimen/width_check_option_activity_payments"
+                android:layout_height="@dimen/heith_check_option_activity_payments"
+                android:layout_gravity="center"
+                android:background="@drawable/checked"></ImageView>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_line_option_activity_payments"
+                android:layout_height="@dimen/Margin_padding4"
+                android:layout_gravity="center"
+                android:background="@color/maucam"></LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/width_check_option_activity_payments"
+                android:layout_height="@dimen/heith_check_option_activity_payments"
+                android:layout_gravity="center"
+                android:background="@drawable/checking"></ImageView>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_line_option_activity_payments"
+                android:layout_height="@dimen/Margin_padding4"
+                android:layout_gravity="center"
+                android:background="@color/maucam"></LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/width_check_option_activity_payments"
+                android:layout_height="@dimen/heith_check_option_activity_payments"
+                android:layout_gravity="center"
+                android:background="@drawable/checking"></ImageView>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_line_option_activity_payments"
+                android:layout_height="@dimen/Margin_padding4"
+                android:layout_gravity="center"
+                android:background="@color/maucam"></LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_marginBottom="@dimen/heith_groupthanhtien_activity_payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_option_buyproduct">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:id="@+id/top2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding3"
+
+                    android:layout_marginTop="@dimen/Margin_padding15"
+                    android:background="#BDBDBD"
+                    tools:ignore="Orientation"></LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top2"
+                    android:layout_marginLeft="@dimen/Margin_padding10"
+                    android:layout_marginTop="@dimen/Margin_padding10"
+                    android:layout_marginRight="@dimen/Margin_padding10">
+
+                    <GridLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/Margin_padding10"
+                        android:columnCount="3"
+                        android:rowCount="5">
+
+                        <RadioButton
+                            android:layout_marginRight="@dimen/Margin_padding10"
+                            android:id="@+id/radio_paybymoney"
+                            android:layout_marginTop="@dimen/Margin_padding8"></RadioButton>
+                        <TextView
+                            android:layout_marginRight="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding8"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Thanh Toán Bằng Tiền Mặt."
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="@dimen/width_icon"
+                            android:layout_height="@dimen/heith_icon"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginLeft="@dimen/Margin_padding8"
+                            android:background="@drawable/money"></ImageView>
+
+                        <RadioButton
+                            android:layout_marginRight="@dimen/Margin_padding10"
+                            android:id="@+id/radio_paybycard"
+                            android:layout_marginTop="@dimen/Margin_padding15"></RadioButton>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding8"
+                            android:gravity="center"
+                            android:padding="@dimen/Margin_padding5"
+                            android:text="Thanh Toán Bằng ATM\n (hỗ trợ internetbanking)"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="@dimen/width_icon"
+                            android:layout_height="@dimen/heith_icon"
+                            android:layout_marginTop="@dimen/Margin_padding15"
+                            android:layout_marginLeft="@dimen/Margin_padding8"
+                            android:background="@drawable/atm">
+
+                        </ImageView>
+
+                        <RadioButton
+                            android:layout_marginRight="@dimen/Margin_padding10"
+                            android:id="@+id/radio_payment"
+                            android:layout_marginTop="@dimen/Margin_padding8"></RadioButton>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding8"
+                            android:gravity="center"
+                            android:padding="@dimen/Margin_padding5"
+                            android:text="Mono, zalopay Ví Điện Tử."
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="@dimen/width_icon"
+                            android:layout_height="@dimen/heith_icon"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginLeft="@dimen/Margin_padding8"
+                            android:background="@drawable/pay">
+
+                        </ImageView>
+                    </GridLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:id="@+id/top5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding3"
+                    android:layout_below="@id/top3"
+                    android:layout_marginTop="@dimen/Margin_padding16"
+                    android:background="#BDBDBD"
+                    tools:ignore="Orientation"></LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top5"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:layout_marginTop="@dimen/Margin_padding16"
+                    android:layout_marginRight="@dimen/Margin_padding16">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tạm Tính:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/provisional_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top4"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:layout_marginTop="@dimen/Margin_padding16"
+                    android:layout_marginRight="@dimen/Margin_padding16">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm Giá:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/title_promotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top6"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:layout_marginTop="@dimen/Margin_padding16"
+                    android:layout_marginRight="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phí Vận Chuyển:"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <TextView
+                            android:id="@+id/delivery_form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding8"
+                            android:text="Chi tiết"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize10"></TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/top8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding3"
+                    android:layout_below="@id/top7"
+                    android:layout_marginTop="@dimen/Margin_padding40"
+                    android:background="#A3A0A0"
+                    tools:ignore="Orientation"></LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_groupthanhtien_activity_payments"
+            android:layout_alignParentBottom="true"
+            android:background="#f1f2f6">
+
+            <RelativeLayout
+                android:id="@+id/top9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding15"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:layout_marginBottom="@dimen/Margin_padding18"
+                android:background="#f1f2f6">
+
+                <TextView
+                    android:id="@+id/tt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thành Tiền"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14"></TextView>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/tt"
+                    android:id="@+id/title_tt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/maudo"
+                    android:textSize="@dimen/TextSize14"></TextView>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/provisional_totalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/maudo"
+                    android:textSize="@dimen/TextSize14"></TextView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_tieptuchththanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_button_activity_payments"
+                android:layout_below="@+id/top9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/Margin_padding50"
+                android:layout_marginTop="@dimen/Margin_padding5"
+                android:layout_marginBottom="@dimen/Margin_padding5"
+                android:background="@drawable/button_muahang"
+                android:padding="10dp"
+                android:text="Tiếp Tục"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"></Button>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

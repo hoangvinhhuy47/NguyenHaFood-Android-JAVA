@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_top_Activity_shareapp"
+            android:background="@color/maucam">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="SHARE"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+
+            <ImageView
+                android:id="@+id/closeshareapp"
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/heith_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/Margin_padding8"
+                android:background="@mipmap/exit"></ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:gravity="center|top"
+            android:text="Bạn Cảm Thấy NguyênHaFood Như Thế nào!!! \n Hãy chia sẽ cho mọi người  cùng biết đến NguyenHaFood Nhé!"
+            android:textColor="@color/maudennhat"
+            android:textSize="@dimen/TextSize12"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:id="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top1"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:layout_marginRight="@dimen/Margin_padding8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link Tải App"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/linkapp"
+                android:layout_width="@dimen/width_txt_linkshare_Activity_shareapp"
+                android:layout_height="@dimen/heith_txt_linkshare_Activity_shareapp"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:paddingLeft="@dimen/Margin_padding4"
+                android:paddingRight="@dimen/Margin_padding4"
+                android:singleLine="true"
+                android:text="https://www.facebook.com/thucphamnguyenha"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/copylinkshare"
+                android:layout_width="@dimen/heith_txt_linkshare_Activity_shareapp"
+                android:layout_height="@dimen/heith_txt_linkshare_Activity_shareapp"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:background="@drawable/copy"></ImageView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_groupQRcode_Activity_shareapp"
+            android:layout_below="@+id/top2"
+            android:layout_marginTop="@dimen/Margin_padding8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:text="Quét mã Để Tải"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/width_img_QRcode_Activity_shareapp"
+                android:layout_height="@dimen/width_img_QRcode_Activity_shareapp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/qrcode"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top3"
+            android:layout_marginTop="@dimen/Margin_padding8">
+
+            <TextView
+                android:id="@+id/gffgfg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Hoặc Bạn Có thể chia sẽ trực tiếp đến"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/gffgfg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding15">
+
+                <ImageView
+
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:background="@drawable/facebook"></ImageView>
+
+                <ImageView
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:background="@drawable/google"></ImageView>
+
+                <ImageView
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:background="@drawable/zalo"></ImageView>
+
+                <ImageView
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_marginLeft="@dimen/Margin_padding16"
+                    android:background="@drawable/instagram"></ImageView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maucam"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_ontop_activity_vietdanhgia">
+            <RelativeLayout
+                android:id="@+id/back_vietdanhgia"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/heith_icon">
+                <ImageView
+                    android:layout_width="@dimen/width_iconback_activity_vietdanhgia"
+                    android:layout_height="@dimen/heith_iconback_activity_vietdanhgia"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:background="@mipmap/back"></ImageView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="Viết Đánh Giá"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <TextView
+            android:id="@+id/textdanhgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/Margin_padding30"
+            android:text="Vui Lòng Đánh Giá"
+            android:textColor="@color/mauden"
+            android:textSize="@dimen/TextSize20"></TextView>
+
+        <RatingBar
+            android:id="@+id/danhgiangoisao"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textdanhgia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/Margin_padding25"
+            android:clickable="true"
+
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1"></RatingBar>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/text_title_writereview"
+            android:layout_width="match_parent"
+            android:text="Rất Hài Lòng"
+            android:textSize="@dimen/TextSize14"
+            android:textColor="@color/mauden"
+            android:layout_height="@dimen/heith_text_title_writereview_activity_vietdanhgia"
+            android:layout_below="@+id/danhgiangoisao"
+            android:layout_marginLeft="@dimen/Margin_padding30"
+            android:layout_marginTop="@dimen/Margin_padding20"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button"></TextView>
+
+        <EditText
+            android:id="@+id/text_content_writereview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_text_content_writereview_activity_vietdanhgia"
+            android:layout_below="@+id/text_title_writereview"
+            android:layout_marginLeft="@dimen/Margin_padding25"
+            android:layout_marginTop="@dimen/Margin_padding15"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/Margin_padding4"
+            android:background="@drawable/button"
+            android:gravity="left"
+            android:padding="@dimen/Margin_padding8"></EditText>
+
+        <TextView
+            android:textSize="@dimen/TextSize14"
+            android:paddingLeft="@dimen/Margin_padding5"
+            android:layout_centerInParent="true"
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_camera_activity_vietdanhgia"
+            android:drawableStart="@drawable/camera"
+            android:text="Thêm Hình Ảnh Sản Phẩm"
+            android:gravity="center"
+            android:textColor="@color/maucam"
+            android:background="@drawable/test"
+            android:layout_below="@+id/text_content_writereview"
+            android:layout_marginLeft="@dimen/Margin_padding24"
+            android:layout_marginTop="@dimen/Margin_padding15"
+            tools:ignore="RtlCompat"></TextView>
+
+        <Button
+            android:id="@+id/btn_guidanhgia"
+            android:layout_width="@dimen/width_button_activity_vietdanhgia"
+            android:layout_height="@dimen/heith_button_activity_vietdanhgia"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/Margin_padding10"
+            android:background="@drawable/button_muahang"
+            android:text="Gửi"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize12"
+            android:textStyle="bold"></Button>
+    </RelativeLayout>
+</RelativeLayout>

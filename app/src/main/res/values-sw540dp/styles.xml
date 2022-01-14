@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/maucam</item>
+        <item name="colorPrimaryDark">@color/maucam</item>
+        <item name="android:fontFamily">@font/amiko</item>
+
+        <item name="colorAccent">@color/maucam</item>
+    </style>
+    <style name="RatingBar.Padding" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars_padding</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+    <style name="spinner_style">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:dropDownWidth">533dp</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:popupBackground">@drawable/button_muahang</item>
+        <item name="android:dropDownHeight">70dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">18.75sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20.625sp</item>
+    </style>
+</resources>

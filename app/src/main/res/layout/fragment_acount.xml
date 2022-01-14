@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCBABA"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ontop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_ontop_fragmentAcount"
+            android:background="@color/maucam">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:gravity="center"
+                android:text="Cá Nhân"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"
+                tools:ignore="RtlCompat"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/Margin_padding10"
+                android:gravity="center">
+
+                <!--                <RelativeLayout-->
+                <!--                    android:layout_width="@dimen/widthMess_cart"-->
+                <!--                    android:layout_height="@dimen/heithMess_cart"-->
+                <!--                    android:layout_marginRight="@dimen/Margin_padding_am3">-->
+
+                <!--                    <FrameLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:clipToPadding="false"-->
+                <!--                        android:focusable="true">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="center"-->
+                <!--                            android:src="@drawable/chat_header" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/cart_badge2"-->
+                <!--                            android:layout_width="@dimen/widthcontentMess_cart"-->
+                <!--                            android:layout_height="@dimen/heithcontentMess_cart"-->
+                <!--                            android:layout_gravity="right|end|top"-->
+                <!--                            android:layout_marginTop="@dimen/Margin_padding2"-->
+                <!--                            android:layout_marginEnd="@dimen/Margin_padding1"-->
+                <!--                            android:layout_marginRight="@dimen/Margin_padding_am8"-->
+                <!--                            android:background="@drawable/badge_background"-->
+                <!--                            android:gravity="center"-->
+                <!--                            android:padding="@dimen/Margin_padding2"-->
+                <!--                            android:text="0"-->
+                <!--                            android:textColor="@color/maudo"-->
+                <!--                            android:textSize="@dimen/TextSize8" />-->
+
+                <!--                    </FrameLayout>-->
+                <!--                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/widthMess_cart"
+                    android:layout_height="@dimen/heithMess_cart">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/view_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/cart" />
+
+                        <TextView
+                            android:id="@+id/cart_badge"
+                            android:layout_width="@dimen/widthcontentMess_cart"
+                            android:layout_height="@dimen/heithcontentMess_cart"
+                            android:layout_gravity="right|end|top"
+                            android:layout_marginTop="@dimen/Margin_padding2"
+                            android:layout_marginEnd="@dimen/Margin_padding1"
+                            android:layout_marginRight="@dimen/Margin_padding_am8"
+                            android:background="@drawable/badge_background"
+                            android:gravity="center"
+                            android:padding="@dimen/Margin_padding2"
+                            android:text="0"
+                            android:textColor="@color/maudo"
+                            android:textSize="@dimen/TextSize8" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ontop"
+            android:background="@color/mautrang">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_groupTT_fragmentAcount"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="@dimen/width_avatar_acount"
+                    android:layout_height="@dimen/heith_avatar_acount"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/Margin_padding8"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:background="@drawable/account_circle_24"></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginTop="@dimen/Margin_padding4">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chào Mừng bạn đến với NguyenHaFood"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtAcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text1"
+                        android:layout_marginTop="@dimen/Margin_padding5"
+                        android:text="Đăng Nhập/ Đăng Ký"
+                        android:textColor="@color/maucam"
+                        android:textSize="@dimen/TextSize14"
+                        android:textStyle="bold"></TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/Margin_padding3"
+            android:background="@color/mautrang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/abc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding8"
+                        android:layout_marginTop="@dimen/Margin_padding16"
+                        android:layout_marginRight="@dimen/Margin_padding8">
+
+                        <LinearLayout
+                            android:id="@+id/quanliDh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/order"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:gravity="left|center_vertical"
+                                android:text="  Quản Lí Đơn Hàng"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sanphamDM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quanliDh">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/buy_check"></ImageView>
+
+                            <TextView
+                                android:id="@id/top2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Đơn Hàng Đã Mua"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sanphamDX"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sanphamDM">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/eye_show"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Sản Phẩm Đã Xem"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sanphamYT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sanphamDX">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/loveproduct"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Sản Phẩm Yêu Thích"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sanphamDDG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sanphamYT">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/danhgia"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Sản Phẩm Đã Đánh Giá"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sanphammuasau"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sanphamDDG">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/buy_late"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Sản Phẩm mua sau"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sanphammuasau">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/setting"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Cài Đặt"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/join_ground"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/setting">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/connect_group"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Tham Gia Cộng Đồng"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/customer_support"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/join_ground">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_icon_fragmentAccount"
+                                android:layout_height="@dimen/heith_icon_fragmentAccount"
+                                android:layout_gravity="center"
+                                android:background="@drawable/support"></ImageView>
+
+                            <TextView
+                                android:id="@id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_textconten_fragmentAccount"
+                                android:layout_below="@id/top2"
+                                android:layout_marginLeft="@dimen/Margin_padding16"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableEnd="@drawable/right_24"
+                                android:text="Hỗ Trợ"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/abc">
+
+                        <TextView
+                            android:id="@+id/abcd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding16"
+                            android:layout_marginTop="@dimen/Margin_padding16"
+                            android:text="Mạng Xã Hội"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/abcd"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/Margin_padding14"
+                            android:layout_marginTop="@dimen/Margin_padding8"
+                            android:layout_marginRight="@dimen/Margin_padding14">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/Margin_padding14"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:layout_marginRight="@dimen/Margin_padding14">
+
+                                <ImageView
+                                    android:id="@+id/img_fb"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:background="@drawable/facebook"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_gg"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+                                    android:background="@drawable/google"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_zalo"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+
+                                    android:background="@drawable/zalo"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_youtube"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+
+                                    android:background="@drawable/youtube"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_twitter"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+
+                                    android:background="@drawable/twitter"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_instagram"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+                                    android:background="@drawable/instagram"></ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

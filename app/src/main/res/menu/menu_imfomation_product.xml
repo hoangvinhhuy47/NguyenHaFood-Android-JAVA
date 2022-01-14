@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/back_home"
+        android:icon="@drawable/backhome"
+        android:enabled="true"
+        android:title="Trở Về Trang Chủ"
+        />
+    <item
+        android:enabled="true"
+        android:id="@+id/menu_product"
+        android:icon="@drawable/backmenu"
+        android:title="Danh Mục Sản Phẩm"
+        />
+    <item
+        android:enabled="true"
+
+        android:id="@+id/acount"
+        android:icon="@drawable/backacount"
+        android:title="Cá Nhân"
+        />
+    <item
+        android:enabled="true"
+
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:title="Chia Sẻ"
+        />
+</menu>

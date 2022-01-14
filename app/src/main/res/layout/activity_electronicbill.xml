@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F1"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maucam"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_ontop_activity_electronicbill">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/width_iconback_activity_electronicbill"
+                android:layout_height="@dimen/heith_iconback_activity_electronicbill"
+                android:layout_marginLeft="@dimen/Margin_padding4"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:background="@mipmap/back"></ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="Hóa đơn điện tử"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/Margin_padding50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:layout_marginTop="@dimen/Margin_padding10"
+                android:layout_marginRight="@dimen/Margin_padding10">
+
+                <LinearLayout
+                    android:id="@+id/top2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_address_billelectric"
+                        android:layout_width="@dimen/width_icon"
+                        android:layout_height="@dimen/heith_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_icon"
+                        android:layout_marginLeft="@dimen/Margin_padding8"
+                        android:text="Địa chỉ hóa đơn giống địa chỉ giao hàng"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/Margin_padding16"
+                    android:id="@+id/top3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top2"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/heith_icon"
+                        android:gravity="center_vertical"
+                        android:text="Nhập thông tin hóa đơn"
+                        android:textAllCaps="true"
+                        android:textColor="@color/maucam"
+                        android:textSize="@dimen/TextSize14" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top3">
+
+                    <LinearLayout
+                        android:id="@+id/group1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Mã số thuế"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/txt_TaxCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_edtbox_activity_electronicbill"
+                        android:layout_below="@id/group1"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="Nhập mã số thuế"
+                        android:paddingLeft="@dimen/Margin_padding8"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top6"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Tên công ty"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/TaxCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_edtbox_activity_electronicbill"
+                        android:layout_below="@id/group2"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="Nhập tên công ty"
+                        android:paddingLeft="@dimen/Margin_padding8"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top8"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Địa chỉ công ty"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/TaxCompanyAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_edtbox_activity_electronicbill"
+                        android:layout_below="@id/group3"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="Nhập địa chỉ công ty"
+                        android:paddingLeft="@dimen/Margin_padding8"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top10"
+                    android:layout_marginTop="@dimen/Margin_padding16">
+
+                    <LinearLayout
+                        android:id="@+id/group4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="Email nhận hóa đơn"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/TaxCompanyEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_edtbox_activity_electronicbill"
+                        android:layout_below="@id/group4"
+                        android:background="@drawable/backgroud_edt"
+                        android:hint="Email nhận hóa đơn"
+                        android:paddingLeft="@dimen/Margin_padding8"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top11"
+                    android:layout_marginTop="@dimen/Margin_padding16"
+                    android:layout_marginBottom="@dimen/Margin_padding15">
+
+                    <TextView
+                        android:id="@+id/top12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/heith_icon"
+                        android:text="Ghi chú:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize13" />
+
+                    <EditText
+                        android:id="@+id/note_billelectric"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heith_edtghichu_activity_electronicbill"
+                        android:layout_below="@id/top12"
+                        android:background="@drawable/backgroud_edt"
+                        android:gravity="left"
+                        android:hint="Ghi chú"
+                        android:padding="@dimen/Margin_padding5"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/Margin_padding12" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding50"
+        android:layout_alignParentBottom="true"
+        android:background="#FDF7ED">
+
+        <Button
+            android:id="@+id/btn_accpect_billelectric"
+            android:layout_width="@dimen/width_button_activity_electronicbill"
+            android:layout_height="@dimen/heith_button_activity_electronicbill"
+            android:layout_marginLeft="@dimen/Margin_padding16"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_muahang"
+            android:text="Xác nhận"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize12" />
+
+        <Button
+            android:id="@+id/btn_refuse_billelectric"
+            android:layout_width="@dimen/width_button_activity_electronicbill"
+            android:layout_height="@dimen/heith_button_activity_electronicbill"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/Margin_padding16"
+            android:layout_centerVertical="true"
+            android:background="@drawable/test"
+            android:text="Hủy Bỏ"
+            android:textColor="@color/maucamnhat"
+            android:textSize="@dimen/TextSize12" />
+    </RelativeLayout>
+</RelativeLayout>

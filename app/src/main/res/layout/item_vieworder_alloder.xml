@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/Margin_padding2"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/backgroud_view_oder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/Margin_padding4">
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Margin_padding4">
+
+                <TextView
+                    android:id="@+id/text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:text="MÃ: "
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_madonhang_Oder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_toRightOf="@+id/text_id"
+                    android:text="123456"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_Ngaydathang_oder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="19:38 , 19/04/2021"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:layout_marginTop="@dimen/Margin_padding4">
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:background="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/text_diachigiaohang_oder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:layout_toRightOf="@+id/img_right"
+                    android:maxLines="2"
+                    android:text="14/7 bis Kỳ Đồng, phường 09, quận 3, thành phố Hồ Chí Minh"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top1"
+                android:layout_marginTop="@dimen/Margin_padding4">
+
+                <TextView
+                    android:id="@+id/text_tongtien_oder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding24"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:text="177.450 đ"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+
+                <TextView
+                    android:padding="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/text_status_oder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Đã Hủy"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

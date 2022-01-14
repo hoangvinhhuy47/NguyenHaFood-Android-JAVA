@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_Item_list_promotion_Item_list_promotion"
+    android:layout_height="@dimen/heith_Item_list_promotion_Item_list_promotion"
+    android:layout_marginTop="@dimen/Margin_padding4"
+    android:layout_marginBottom="@dimen/Margin_padding5"
+    android:layout_marginLeft="@dimen/Margin_padding4"
+    android:background="@drawable/backgournditem"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:background="#f1f2f6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img_promotion"
+                android:layout_width="@dimen/width_img_Item_list_promotion_Item_list_promotion"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/img_lstpromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/Margin_padding4"
+                android:layout_marginTop="@dimen/Margin_padding3">
+
+                <TextView
+                    android:id="@+id/name_product_promotion"
+                    android:layout_width="@dimen/width_nameproduct_Item_list_promotion_Item_list_promotion"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Lỗi nạc thịt bò Úc Cắt lác"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize9"></TextView>
+
+                <RatingBar
+                    android:id="@+id/review_value_promotion"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_product_promotion"
+                    android:layout_marginTop="@dimen/Margin_padding5"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.1"></RatingBar>
+
+                <TextView
+                    android:id="@+id/price_promotion_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/review_value_promotion"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginTop="@dimen/Margin_padding8"
+                    android:text="145.000"
+                    android:textColor="@color/maudo"
+                    android:textSize="@dimen/TextSize10"></TextView>
+
+                <TextView
+                    android:id="@+id/sale_price_promotion_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/review_value_promotion"
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_marginTop="@dimen/Margin_padding10"
+                    android:layout_toRightOf="@+id/price_promotion_home"
+                    android:text="145.000"
+                    android:textColor="#777575"
+                    android:textSize="@dimen/TextSize8"></TextView>
+                <TextView
+                    android:id="@+id/specialPrice_promotion_home"
+                    android:layout_width="@dimen/Margin_padding30"
+                    android:layout_height="@dimen/Margin_padding20"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/textview_backgroud"
+                    android:text="-5%"
+                    android:gravity="center"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize8"></TextView>
+                <Button
+                    style="@style/Clickable"
+                    android:layout_marginBottom="@dimen/Margin_padding5"
+                    android:id="@+id/chose_promotion_home"
+                    android:layout_width="@dimen/width_bottun_Item_list_promotion_Item_list_promotion"
+                    android:layout_height="@dimen/heith_bottun_Item_list_promotion_Item_list_promotion"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/test"
+                    android:textColor="@color/maucam"
+                    android:text="Mua Ngay"
+                    android:textSize="@dimen/TextSize8"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/Margin_padding8"></Button>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

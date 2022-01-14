@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_notification"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/width_button_activity_vietdanhgia"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    app:cardCornerRadius="8dp"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/test">
+
+        <RelativeLayout
+            android:id="@+id/top123"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="WebViewLayout">
+
+                <TextView
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:id="@+id/caption_notifinews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin_padding5"
+                    android:ellipsize="end"
+                    android:gravity="left|center"
+                    android:maxLines="2"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14"></TextView>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:id="@+id/groupasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/caption_notifinews"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/shortder_notifinews"
+                        android:layout_width="@dimen/width_contentaddress_AddressActivity"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/caption_notifinews"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="1"
+                        android:textColor="@color/mauxam"
+                        android:textSize="@dimen/TextSize13"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Xem chi tiết)"
+                        android:textColor="@color/maudennhat"
+                        android:textSize="@dimen/TextSize13" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_132"
+                    android:layout_below="@+id/groupasa"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    app:cardCornerRadius="2dp">
+
+                    <ImageView
+                        android:id="@+id/img_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:paddingRight="@dimen/Margin_padding5"
+                    android:paddingLeft="@dimen/Margin_padding5"
+                    android:background="#EDFAEE"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding35"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/Margin_padding5">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:id="@+id/groupfg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="@dimen/Margin_padding18"
+                            android:layout_height="@dimen/Margin_padding18"
+                            android:layout_marginRight="@dimen/Margin_padding5"
+                            android:background="@drawable/eye" />
+
+                        <TextView
+                            android:id="@+id/viewcount_notification"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/Margin_padding2"
+                            android:ellipsize="end"
+                            android:gravity="left|center"
+                            android:maxLines="2"
+                            android:textColor="@color/maudennhat"
+                            android:textSize="@dimen/TextSize12"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:id="@+id/groupnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/Margin_padding5">
+
+                        <ImageView
+                            android:layout_width="@dimen/Margin_padding18"
+                            android:layout_height="@dimen/Margin_padding18"
+                            android:layout_marginRight="@dimen/Margin_padding5"
+                            android:background="@drawable/schedule" />
+
+                        <TextView
+                            android:id="@+id/date_notifinews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="left|center"
+                            android:maxLines="2"
+                            android:layout_marginTop="@dimen/Margin_padding2"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize12"></TextView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

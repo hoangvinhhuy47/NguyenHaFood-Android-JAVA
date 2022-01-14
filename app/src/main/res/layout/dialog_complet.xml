@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button"
+    android:paddingBottom="@dimen/Margin_padding16">
+
+    <RelativeLayout
+        android:id="@+id/bgr_error"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/dialogcomplet">
+
+        <ImageView
+            android:id="@+id/exit_erorr"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/Margin_padding8"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@mipmap/exit" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_error"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bgr_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Margin_padding19"
+        android:gravity="center"
+        android:text="Đăng nhập thành công 552852285282825825"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Margin_padding16">
+
+        <Button
+            android:layout_width="@dimen/width_button_Dialog_rebuy_canceoder"
+            android:layout_height="@dimen/heith_button_Dialog_rebuy_canceoder"
+            android:layout_marginRight="@dimen/Margin_padding50"
+            android:background="@drawable/test"
+            android:text="Chấp nhận"
+            android:textColor="@color/maucam" />
+
+        <Button
+            android:layout_width="@dimen/width_button_Dialog_rebuy_canceoder"
+            android:layout_height="@dimen/heith_button_Dialog_rebuy_canceoder"
+            android:background="@drawable/test"
+            android:text="hủy bỏ"
+            android:textColor="@color/maucam" />
+    </LinearLayout>
+
+</RelativeLayout>

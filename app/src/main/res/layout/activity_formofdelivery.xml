@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_ontop_Activity_Formofdelivery"
+            android:background="@color/maucam">
+
+            <ImageView
+
+                android:id="@+id/back_hinhthucgiaohang"
+                android:layout_width="@dimen/width_iconback_Activity_Formofdelivery"
+                android:layout_height="@dimen/heith_iconback_Activity_Formofdelivery"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:background="@mipmap/back"></ImageView>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:text="Hình Thức Giao Hàng"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"></TextView>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:id="@+id/top_option_buyproduct"
+            android:layout_marginLeft="@dimen/Margin_padding24"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heith_option_buyproduct_Activity_Formofdelivery">
+            <LinearLayout
+                android:background="@color/maucam"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/width_line_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/Margin_padding4"></LinearLayout>
+            <ImageView
+                android:id="@+id/ic_backviewcart"
+                android:layout_gravity="center"
+                android:background="@drawable/checked"
+                android:layout_width="@dimen/width_check_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/heith_check_option_Activity_Formofdelivery"></ImageView>
+            <LinearLayout
+                android:background="@color/maucam"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/width_line_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/Margin_padding4"></LinearLayout>
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/checking"
+                android:layout_width="@dimen/width_check_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/heith_check_option_Activity_Formofdelivery"></ImageView>
+            <LinearLayout
+                android:background="@color/maucam"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/width_line_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/Margin_padding4"></LinearLayout>
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/checking"
+                android:layout_width="@dimen/width_check_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/heith_check_option_Activity_Formofdelivery"></ImageView>
+            <LinearLayout
+                android:background="@color/maucam"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/width_line_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/Margin_padding4"></LinearLayout>
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/checking"
+                android:layout_width="@dimen/width_check_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/heith_check_option_Activity_Formofdelivery"></ImageView>
+            <LinearLayout
+                android:background="@color/maucam"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/width_line_option_Activity_Formofdelivery"
+                android:layout_height="@dimen/Margin_padding4"></LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_option_buyproduct">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:text="Địa Chỉ Nhận Hàng"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize14"
+                ></TextView>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/change_address_delivery"
+                android:layout_width="@dimen/width_text_chon_Activity_Formofdelivery"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:text="Chọn"
+                android:textColor="@color/maucam"
+                android:textSize="@dimen/TextSize14"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:gravity="center|left"
+                android:hint="Chọn Địa Chỉ Giao Hàng!"
+                android:id="@+id/txt_address_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding8"
+                android:maxLines="4"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize14"
+                tools:ignore="RtlCompat"></TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding5"
+            android:layout_below="@+id/top1"
+
+            android:layout_marginTop="@dimen/Margin_padding25"
+
+            android:background="#C5C4C4"
+            tools:ignore="Orientation"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:id="@+id/top4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top3">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding8"
+
+                android:text="Chọn Hình Thức Giao Hàng"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize14"></TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top4"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            tools:ignore="NotSibling,Orientation">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/Margin_padding20"
+            android:id="@+id/lne_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top5"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            tools:ignore="NotSibling">
+
+            <RadioButton
+                android:id="@+id/radio_standard_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao Hàng Tiêu Chuẩn."
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/Margin_padding16"
+            android:id="@+id/top7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lne_delivery"
+            android:layout_marginLeft="@dimen/Margin_padding32"
+            tools:ignore="NotSibling,Orientation"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top7"
+            android:layout_marginLeft="@dimen/Margin_padding32"
+            tools:ignore="NotSibling,Orientation">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lne_delivery1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top8"
+            android:layout_marginLeft="@dimen/Margin_padding8"
+            tools:ignore="NotSibling">
+
+            <RadioButton
+                android:id="@+id/radio_fast_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao Hàng Nhanh.  "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"></TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#f1f2f6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <LinearLayout
+                android:paddingTop="@dimen/Margin_padding10"
+                android:paddingBottom="@dimen/Margin_padding5"
+                android:background="#f1f2f6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/btn_tieptucmuahang"
+                    android:layout_width="@dimen/width_button_Activity_Formofdelivery"
+                    android:layout_height="@dimen/heith_button_Activity_Formofdelivery"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button"
+                    android:text="Trở Về"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12"></Button>
+                <Button
+                    android:id="@+id/btn_tieptuc"
+                    android:layout_width="@dimen/width_button_Activity_Formofdelivery"
+                    android:layout_height="@dimen/heith_button_Activity_Formofdelivery"
+                    android:layout_marginLeft="@dimen/Margin_padding8"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/btn_tieptucmuahang"
+                    android:background="@drawable/button_muahang"
+                    android:text="Tiếp Tục"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize12"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

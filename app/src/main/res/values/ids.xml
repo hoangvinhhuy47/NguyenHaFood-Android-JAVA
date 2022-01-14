@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sp_dadanhgia" type="id" />
+    <item name="hellp_acountlogin" type="id" />
+    <item name="addgroup_nguyenhafood" type="id" />
+    <item name="txt_spdaxem" type="id" />
+    <item name="txt_spyeuthich" type="id" />
+    <item name="txt_spmuasau" type="id" />
+</resources>

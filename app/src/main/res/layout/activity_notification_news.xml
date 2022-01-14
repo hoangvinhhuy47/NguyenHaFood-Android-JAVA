@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/menu_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding50"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_notifiNew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top3"
+            android:layout_marginTop="@dimen/Margin_padding4"
+            android:layout_marginLeft="@dimen/Margin_padding4"/>
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Records"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

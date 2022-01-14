@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_top_Activity_shareapp">
+
+                <ImageView
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding4"
+                    android:layout_marginTop="@dimen/Margin_padding8"
+                    android:background="@mipmap/back"></ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/Margin_padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="Cài đặt"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/Margin_padding5"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sdsdsd"
+                android:layout_marginTop="@dimen/Margin_padding12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp">
+                <RelativeLayout
+                    android:id="@+id/top1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding50">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:gravity="center"
+                        android:text="Cho phép nhận thông báo"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_centerVertical="true"
+                        android:id="@+id/acpect_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/Margin_padding15" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/sdsdsd"
+                android:id="@+id/sdsdsd2"
+                android:layout_marginTop="@dimen/Margin_padding12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding50">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:gravity="center"
+                        android:text="Phiên bản"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/Margin_padding24"
+                        android:gravity="center"
+                        android:text="1.0.0"
+                        android:textColor="@color/mauxam"
+                        android:textSize="@dimen/TextSize12" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

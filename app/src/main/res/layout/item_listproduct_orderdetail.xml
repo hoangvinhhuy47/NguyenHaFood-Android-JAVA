@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/backgroud_product_orderdetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_iitem_activity_orderdetails"
+        android:background="@color/mautrang">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_STT_orderdetali"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:textColor="@color/maudennhat"
+            android:textSize="@dimen/TextSize16" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="@dimen/Margin_padding3"
+            android:layout_marginTop="@dimen/Margin_padding3"
+            android:id="@+id/top1"
+            android:layout_width="@dimen/heith_img_item_activity_orderdetails"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/txt_STT_orderdetali"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/image_listproduct_orderdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/top4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/top1">
+
+            <TextView
+                android:id="@+id/name_listproduct_orderdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:id="@+id/group_sl_gt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_listproduct_orderdetail"
+                android:layout_marginLeft="@dimen/Margin_padding8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số lượng: "
+                        android:textColor="@color/maudennhat"
+                        android:textSize="@dimen/TextSize12"></TextView>
+
+                    <TextView
+                        android:id="@+id/text_Quantity_orderdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding4"
+                        android:textColor="@color/maudennhat"
+                        android:textSize="@dimen/TextSize12"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/fdgdg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/Margin_padding4"
+                        android:text="Giá: "
+                        android:textColor="@color/maudennhat"
+                        android:textSize="@dimen/TextSize12" />
+
+                    <TextView
+                        android:id="@+id/price_listproduct_orderdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/Margin_padding8"
+                        android:textColor="@color/maudennhat"
+                        android:textSize="@dimen/TextSize12" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heith_icon"
+                    android:gravity="center"
+                    android:text="Thành tiền: "
+                    android:textColor="@color/maudennhat"
+                    android:textSize="@dimen/TextSize12" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/dsa"
+                    android:id="@+id/Amount_listproduct_orderdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:gravity="center"
+                    android:textColor="@color/maudo"
+                    android:textSize="@dimen/TextSize12" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top4"
+            android:layout_toRightOf="@id/top1"
+            android:gravity="center">
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

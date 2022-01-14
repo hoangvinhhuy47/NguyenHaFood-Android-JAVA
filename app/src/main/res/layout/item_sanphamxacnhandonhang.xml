@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/Margin_padding4"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/backgroud_orderconfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_Item_sanphamxacnahndonhang">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/width_imgproduct_Item_sanphamxacnahndonhang"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_viewprocut_bill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+
+            <TextView
+                android:id="@+id/speacial_viewproduct_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/textview_backgroud"
+                android:text="-5%"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize12"></TextView>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/Margin_padding4">
+
+            <TextView
+                android:id="@+id/Name_viewproduct_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"></TextView>
+
+            <TextView
+                android:id="@+id/qualiti_viewproduct_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name_viewproduct_bill"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"></TextView>
+
+            <TextView
+                android:id="@+id/sellprice_viewproduct_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qualiti_viewproduct_bill"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"></TextView>
+
+            <TextView
+                android:id="@+id/saleprice_product_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qualiti_viewproduct_bill"
+                android:layout_marginLeft="@dimen/Margin_padding12"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:layout_toRightOf="@+id/sellprice_viewproduct_bill"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize12"></TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

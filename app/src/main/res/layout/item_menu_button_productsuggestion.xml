@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/Margin_padding1"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+    <RelativeLayout
+        android:id="@+id/catory_menuDTO"
+        android:layout_width="@dimen/width_item_menu_cap1"
+        android:layout_height="@dimen/heith_item_menu_cap1"
+        android:background="#FBECD4"
+        android:layout_marginLeft="@dimen/Margin_padding2"
+        >
+        <ImageView
+            android:layout_marginLeft="@dimen/Margin_padding10"
+            android:id="@+id/img_menuc"
+            android:layout_width="@dimen/width_item_menu_cap1"
+            android:layout_height="@dimen/heith_item_menu_cap1_icon"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/txt_tenMunec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gợi ý cho bạn"
+            android:layout_below="@+id/img_menuc"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/TextSize10"
+            android:textColor="@color/maudennhat"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textStyle="normal"
+            android:textAllCaps="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

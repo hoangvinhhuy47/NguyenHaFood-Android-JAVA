@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        style="@style/Clickable"
+        android:id="@+id/btn_menu_meat"
+        android:layout_width="@dimen/width_button_Dialog_exitapp"
+        android:layout_height="@dimen/heith_button_Dialog_exitapp"
+        android:layout_marginLeft="@dimen/Margin_padding8"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:text="Bò"
+        android:textColor="@color/mauden"
+        android:textSize="@dimen/TextSize12"></TextView>
+
+</RelativeLayout>

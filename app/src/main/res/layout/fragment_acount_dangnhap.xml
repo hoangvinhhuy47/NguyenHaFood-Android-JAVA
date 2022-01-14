@@ -1,0 +1,916 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource"
+    android:background="#BCBABA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ontop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_ontop_fragmentAcount_login"
+            android:background="@color/maucam">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/Margin_padding16"
+                android:layout_marginTop="@dimen/Margin_padding4"
+                android:gravity="center"
+                android:text="Cá Nhân"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14"
+                tools:ignore="RtlCompat"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/Margin_padding10"
+                android:gravity="center">
+
+                <!--                <RelativeLayout-->
+                <!--                    android:layout_width="@dimen/widthMess_cart"-->
+                <!--                    android:layout_height="@dimen/heithMess_cart"-->
+                <!--                    android:layout_marginRight="@dimen/Margin_padding_am3">-->
+
+                <!--                    <FrameLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:clipToPadding="false"-->
+                <!--                        android:focusable="true">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="center"-->
+                <!--                            android:src="@drawable/chat_header" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/cart_badge2"-->
+                <!--                            android:layout_width="@dimen/widthcontentMess_cart"-->
+                <!--                            android:layout_height="@dimen/heithcontentMess_cart"-->
+                <!--                            android:layout_gravity="right|end|top"-->
+                <!--                            android:layout_marginTop="@dimen/Margin_padding2"-->
+                <!--                            android:layout_marginEnd="@dimen/Margin_padding1"-->
+                <!--                            android:layout_marginRight="@dimen/Margin_padding_am8"-->
+                <!--                            android:background="@drawable/badge_background"-->
+                <!--                            android:gravity="center"-->
+                <!--                            android:padding="@dimen/Margin_padding2"-->
+                <!--                            android:text="0"-->
+                <!--                            android:textColor="@color/maudo"-->
+                <!--                            android:textSize="@dimen/TextSize8" />-->
+
+                <!--                    </FrameLayout>-->
+                <!--                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/widthMess_cart"
+                    android:layout_height="@dimen/heithMess_cart">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/view_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/cart" />
+
+                        <TextView
+                            android:id="@+id/cart_badge"
+                            android:layout_width="@dimen/widthcontentMess_cart"
+                            android:layout_height="@dimen/heithcontentMess_cart"
+                            android:layout_gravity="right|end|top"
+                            android:layout_marginTop="@dimen/Margin_padding2"
+                            android:layout_marginEnd="@dimen/Margin_padding1"
+                            android:layout_marginRight="@dimen/Margin_padding_am8"
+                            android:background="@drawable/badge_background"
+                            android:gravity="center"
+                            android:padding="@dimen/Margin_padding2"
+                            android:text="0"
+                            android:textColor="@color/maudo"
+                            android:textSize="@dimen/TextSize8" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_tt_acount_loggin"
+            android:layout_below="@+id/ontop"
+            android:background="@color/mautrang">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/width_avatar_acount_loggin"
+                android:layout_height="@dimen/heith_avatar_acount_loggin"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:layout_marginTop="@dimen/Margin_padding16"
+                android:src="@drawable/account_circle_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_group_tt_acount_loggin"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding8"
+                android:layout_marginTop="@dimen/Margin_padding16"
+                android:layout_marginRight="@dimen/Margin_padding24"
+                android:layout_toRightOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/txt_fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize17"></TextView>
+
+                <TextView
+                    android:id="@+id/acount_createacount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_fullname"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize13"></TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_xemtt"
+                android:layout_width="@dimen/width_iconCT_tt_acount_loggin"
+                android:layout_height="@dimen/heith_iconCT_tt_acount_loggin"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/Margin_padding24"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:background="@drawable/right_30"
+                android:padding="5dp"></ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/xyz"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding1"
+            android:layout_below="@id/top"
+            android:background="@color/mauxam"
+            tools:ignore="Orientation">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_marginBottom="@dimen/Margin_padding3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/xyz"
+            android:background="#E8E7E7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/group_DH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Margin_padding3"
+                    android:layout_marginTop="@dimen/Margin_padding3"
+                    android:layout_marginRight="@dimen/Margin_padding2"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/abc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/Margin_padding4">
+
+                        <RelativeLayout
+                            android:id="@+id/ln_QLDH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_QLdonhang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:gravity="center"
+                                android:text="Quản lý đơn hàng."
+                                android:textAllCaps="true"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize13"
+                                tools:ignore="RtlCompat"></TextView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sdsdsd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ln_QLDH"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/Margin_padding8"
+                            android:layout_marginRight="@dimen/Margin_padding8">
+
+                            <RelativeLayout
+                                android:id="@+id/ln_Oder_dangxuly"
+                                android:layout_width="@dimen/width_button_groupQLDh"
+                                android:layout_height="@dimen/heith_button_groupQLDh"
+                                android:layout_marginRight="@dimen/Margin_padding11">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/img_DHCT_DXL_card"
+                                    android:layout_width="@dimen/width_cardimg_button_groupQLDh"
+                                    android:layout_height="@dimen/heith_cardimg_button_groupQLDh"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/Margin_padding4"
+                                    android:outlineAmbientShadowColor="@color/mauxam"
+                                    app:cardBackgroundColor="#F5FEFF"
+                                    app:cardCornerRadius="@dimen/radius_cardimg_button_groupQLDh">
+
+                                    <ImageView
+                                        android:id="@+id/img_DXL_DHCT"
+                                        android:layout_width="@dimen/Margin_padding24"
+                                        android:layout_height="@dimen/Margin_padding24"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/box_loading"
+                                        android:padding="@dimen/Margin_padding8"
+                                        android:scaleType="fitXY" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="@dimen/heith_textcontent_groupQLDh"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/img_DHCT_DXL_card"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Đang xử lý."
+                                    android:textColor="@color/maudennhat"
+                                    android:textSize="@dimen/TextSize10" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/ln_Oder_dangvanchuyen"
+                                android:layout_width="@dimen/width_button_groupQLDh"
+                                android:layout_height="@dimen/heith_button_groupQLDh"
+                                android:layout_marginRight="@dimen/Margin_padding11">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/img_DHCT_DVC_card"
+                                    android:layout_width="@dimen/width_cardimg_button_groupQLDh"
+                                    android:layout_height="@dimen/heith_cardimg_button_groupQLDh"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/Margin_padding4"
+                                    android:outlineAmbientShadowColor="@color/mauxam"
+                                    app:cardBackgroundColor="#F5FEFF"
+                                    app:cardCornerRadius="@dimen/radius_cardimg_button_groupQLDh">
+
+                                    <ImageView
+                                        android:id="@+id/img_DHCT_DVC"
+                                        android:layout_width="@dimen/Margin_padding24"
+                                        android:layout_height="@dimen/Margin_padding24"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/truck_32"
+                                        android:padding="@dimen/Margin_padding8"
+                                        android:scaleType="fitXY" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="@dimen/heith_textcontent_groupQLDh"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/img_DHCT_DVC_card"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Đang vận chuyển."
+                                    android:textColor="@color/maudennhat"
+                                    android:textSize="@dimen/TextSize10" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/ln_Oder_dahuy"
+                                android:layout_width="@dimen/width_button_groupQLDh"
+                                android:layout_height="@dimen/heith_button_groupQLDh"
+                                android:layout_marginRight="@dimen/Margin_padding11">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/img_DHCT_DH_card"
+                                    android:layout_width="@dimen/width_cardimg_button_groupQLDh"
+                                    android:layout_height="@dimen/heith_cardimg_button_groupQLDh"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/Margin_padding4"
+                                    android:outlineAmbientShadowColor="@color/mauxam"
+                                    app:cardBackgroundColor="#F5FEFF"
+                                    app:cardCornerRadius="@dimen/radius_cardimg_button_groupQLDh">
+
+                                    <ImageView
+                                        android:id="@+id/img_DHCT_DH"
+                                        android:layout_width="@dimen/Margin_padding24"
+                                        android:layout_height="@dimen/Margin_padding24"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/purchase_order_exit"
+                                        android:padding="@dimen/Margin_padding8"
+                                        android:scaleType="fitXY" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="@dimen/heith_textcontent_groupQLDh"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/img_DHCT_DH_card"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Đã hủy."
+                                    android:textColor="@color/maudennhat"
+                                    android:textSize="@dimen/TextSize10" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/ln_Oder_dathanhcong"
+                                android:layout_width="@dimen/width_button_groupQLDh"
+                                android:layout_height="@dimen/heith_button_groupQLDh"
+                                android:layout_marginRight="@dimen/Margin_padding11">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/img_DHCT_HT_card"
+                                    android:layout_width="@dimen/width_cardimg_button_groupQLDh"
+                                    android:layout_height="@dimen/heith_cardimg_button_groupQLDh"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/Margin_padding4"
+                                    android:outlineAmbientShadowColor="@color/mauxam"
+                                    app:cardBackgroundColor="#F5FEFF"
+                                    app:cardCornerRadius="@dimen/radius_cardimg_button_groupQLDh">
+
+                                    <ImageView
+                                        android:id="@+id/img_DHCT_HT"
+                                        android:layout_width="@dimen/Margin_padding24"
+                                        android:layout_height="@dimen/Margin_padding24"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/purchase_order_check"
+                                        android:padding="@dimen/Margin_padding8"
+                                        android:scaleType="fitXY" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="@dimen/heith_textcontent_groupQLDh"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/img_DHCT_HT_card"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Hoàn thành."
+                                    android:textColor="@color/maudennhat"
+                                    android:textSize="@dimen/TextSize10" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/group_QT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/group_DH"
+                    android:layout_marginLeft="@dimen/Margin_padding3"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding3"
+                    app:cardCornerRadius="@dimen/Margin_padding8">
+
+                    <RelativeLayout
+                        android:id="@+id/Rlt_QT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/Margin_padding4">
+
+                        <RelativeLayout
+                            android:id="@+id/ln_QT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_QT"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_gravity="left|center"
+                                android:layout_marginLeft="@dimen/Margin_padding4"
+                                android:gravity="left|center_vertical"
+                                android:text="Quan tâm."
+                                android:textAllCaps="true"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14"
+                                tools:ignore="RtlCompat"></TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ln_QT"
+                            android:layout_marginLeft="@dimen/Margin_padding12">
+
+                            <TextView
+                                android:id="@id/txt_spdaxem"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:drawableStart="@drawable/eye_show"
+                                android:gravity="left|center_vertical"
+                                android:padding="5dp"
+                                android:text="    Sản Phẩm Đã Xem."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+                            <LinearLayout
+                                android:id="@+id/xyz1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/Margin_padding1"
+                                android:layout_below="@id/txt_spdaxem"
+                                android:background="@color/mauxam"
+                                tools:ignore="Orientation"></LinearLayout>
+
+                            <TextView
+                                android:id="@id/txt_spyeuthich"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_below="@+id/xyz1"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/loveproduct"
+                                android:gravity="left|center_vertical"
+
+                                android:padding="5dp"
+                                android:text="    Sản Phẩm Đã Yêu Thích."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+                            <LinearLayout
+                                android:id="@+id/xyz2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/Margin_padding1"
+                                android:layout_below="@id/txt_spyeuthich"
+                                android:background="@color/mauxam"
+                                tools:ignore="Orientation"></LinearLayout>
+
+                            <TextView
+                                android:id="@id/txt_spmuasau"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_below="@+id/xyz2"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/buy_late"
+                                android:gravity="left|center_vertical"
+                                android:padding="5dp"
+                                android:text="    Sản Phẩm Mua Sau."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+                            <LinearLayout
+                                android:id="@+id/xyz3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/Margin_padding1"
+                                android:layout_below="@id/txt_spmuasau"
+                                android:background="@color/mauxam"
+                                tools:ignore="Orientation"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txt_spdamua"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_below="@+id/xyz3"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/buy_check"
+                                android:gravity="left|center_vertical"
+
+                                android:padding="5dp"
+                                android:text="    Sản Phẩm Đã Mua."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+                            <LinearLayout
+                                android:id="@+id/xyz4"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/Margin_padding1"
+                                android:layout_below="@+id/txt_spdamua"
+                                android:background="@color/mauxam"
+                                tools:ignore="Orientation"></LinearLayout>
+
+                            <TextView
+                                android:id="@id/sp_dadanhgia"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_below="@+id/xyz4"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/danhgia"
+                                android:gravity="left|center_vertical"
+                                android:padding="5dp"
+                                android:text="    Sản Phẩm Đã Đánh Giá."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/group_TIK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/group_QT"
+                    android:layout_marginLeft="@dimen/Margin_padding3"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding3"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rlt_TIK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/Margin_padding4">
+
+                        <RelativeLayout
+                            android:id="@+id/ln_TIK"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_TIK"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_gravity="left|center"
+                                android:layout_marginLeft="@dimen/Margin_padding4"
+                                android:gravity="left|center_vertical"
+                                android:text="Tiện ích khác."
+                                android:textAllCaps="true"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14"
+                                tools:ignore="RtlCompat"></TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ln_TIK"
+                            android:layout_marginLeft="@dimen/Margin_padding8">
+
+                            <TextView
+                                android:id="@id/txt_sodc"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/location"
+                                android:gravity="left|center_vertical"
+
+                                android:padding="5dp"
+                                android:text="    Sổ Địa Chỉ."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+                            <TextView
+                                android:id="@id/top1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_below="@+id/txt_sodc"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/payment"
+                                android:gravity="left|center_vertical"
+
+                                android:padding="5dp"
+                                android:text="    Hình Thức Thanh Toán."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+
+
+                            <TextView
+                                android:id="@id/hellp_acountlogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_below="@+id/top1"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:drawableStart="@drawable/support"
+                                android:gravity="left|center_vertical"
+                                android:padding="5dp"
+                                android:text="    Hỗ Trợ."
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize12"
+                                tools:ignore="RtlCompat"></TextView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/Group_MGG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/group_TIK"
+                    android:layout_marginLeft="@dimen/Margin_padding2"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding2"
+                    android:gravity="center">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/heith_maKM_maGT_acount_loggin"
+                        android:layout_marginLeft="@dimen/Margin_padding3"
+                        android:layout_marginRight="@dimen/Margin_padding4"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/img_MGG_MGG_card"
+                                android:layout_width="@dimen/width_maKM_maGT_Cardimg_acount_loggin"
+                                android:layout_height="@dimen/heith_maKM_maGT_Cardimg_acount_loggin"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:outlineAmbientShadowColor="@color/mautrang"
+                                app:cardBackgroundColor="@color/mautrang"
+                                app:cardCornerRadius="10dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:id="@+id/img_MGG_MGG"
+                                    android:layout_width="@dimen/width_maKM_maGT_img_acount_loggin"
+                                    android:layout_height="@dimen/heith_maKM_maGT_img_acount_loggin"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/sale_home"
+                                    android:padding="@dimen/Margin_padding8"
+                                    android:scaleType="fitXY" />
+                            </androidx.cardview.widget.CardView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:layout_toRightOf="@id/img_MGG_MGG_card">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mã KM."
+                                    android:textColor="@color/maudennhat"
+                                    android:textSize="@dimen/TextSize14" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/heith_maKM_maGT_acount_loggin"
+                        android:layout_marginLeft="@dimen/Margin_padding4"
+                        android:layout_marginRight="@dimen/Margin_padding3"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/img_MGG_MGT_card"
+                                android:layout_width="@dimen/width_maKM_maGT_Cardimg_acount_loggin"
+                                android:layout_height="@dimen/heith_maKM_maGT_Cardimg_acount_loggin"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:outlineAmbientShadowColor="@color/mautrang"
+                                app:cardBackgroundColor="@color/mautrang"
+                                app:cardCornerRadius="10dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:id="@+id/img_MGG_MGT"
+                                    android:layout_width="@dimen/width_maKM_maGT_img_acount_loggin"
+                                    android:layout_height="@dimen/heith_maKM_maGT_img_acount_loggin"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/referral"
+                                    android:padding="@dimen/Margin_padding8"
+                                    android:scaleType="fitXY" />
+                            </androidx.cardview.widget.CardView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/Margin_padding8"
+                                android:layout_toRightOf="@id/img_MGG_MGT_card">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/Margin_padding3"
+                                    android:layout_marginBottom="@dimen/Margin_padding2"
+                                    android:text="Mã giới thiệu."
+                                    android:textColor="@color/maudennhat"
+                                    android:textSize="@dimen/TextSize15" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/group_MXH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Group_MGG"
+                    android:layout_marginLeft="@dimen/Margin_padding3"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:layout_marginRight="@dimen/Margin_padding3"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rlt_MXH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/Margin_padding4">
+
+                        <RelativeLayout
+                            android:id="@+id/ln_MXH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_MXH"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                                android:layout_gravity="left|center"
+                                android:layout_marginLeft="@dimen/Margin_padding4"
+                                android:gravity="left|center_vertical"
+                                android:text="Mạng Xã hội."
+                                android:textAllCaps="true"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14"
+                                tools:ignore="RtlCompat"></TextView>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_ketnoi"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                            android:layout_below="@+id/ln_MXH"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:drawableStart="@drawable/connect"
+                            android:gravity="left|center_vertical"
+                            android:text="    Kết nối."
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize12"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <LinearLayout
+                            android:id="@+id/xyz5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding1"
+                            android:layout_below="@id/txt_ketnoi"
+                            android:background="@color/mauxam"
+                            tools:ignore="Orientation"></LinearLayout>
+
+                        <TextView
+                            android:id="@id/addgroup_nguyenhafood"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                            android:layout_below="@+id/xyz5"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginBottom="@dimen/Margin_padding8"
+                            android:drawableStart="@drawable/connect_group"
+                            android:gravity="left|center_vertical"
+                            android:text="    Tham gia nhóm Cộng Đồng."
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize12"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <LinearLayout
+                            android:id="@+id/xyz6"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding1"
+                            android:layout_below="@id/addgroup_nguyenhafood"
+                            android:background="@color/mauxam"
+                            tools:ignore="Orientation"></LinearLayout>
+
+                        <TextView
+                            android:id="@+id/abcd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/heith_text_content_group_acount_loggin"
+                            android:layout_below="@+id/xyz6"
+                            android:layout_marginLeft="@dimen/Margin_padding4"
+                            android:gravity="center"
+                            android:text="Liên kết."
+                            android:textAllCaps="true"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <RelativeLayout
+                            android:id="@+id/MXH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/abcd"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/Margin_padding8"
+                            android:layout_marginBottom="@dimen/Margin_padding8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/Margin_padding14"
+                                android:layout_marginTop="@dimen/Margin_padding8"
+                                android:layout_marginRight="@dimen/Margin_padding14">
+
+                                <ImageView
+                                    android:id="@+id/img_fb"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:background="@drawable/facebook"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_gg"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+                                    android:background="@drawable/google"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_zalo"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+
+                                    android:background="@drawable/zalo"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_youtube"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+
+                                    android:background="@drawable/youtube"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_twitter"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+
+                                    android:background="@drawable/twitter"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/img_instagram"
+                                    android:layout_width="@dimen/width_icon_groupMXH_acount_loggin"
+                                    android:layout_height="@dimen/heith_icon_groupMXH_acount_loggin"
+                                    android:layout_marginLeft="@dimen/Margin_padding12"
+                                    android:background="@drawable/instagram"></ImageView>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/group_MXH"
+                    android:layout_marginTop="@dimen/Margin_padding4"
+                    android:background="@drawable/backgroud_dangxuat"
+                    android:paddingBottom="@dimen/Margin_padding15">
+
+                    <TextView
+                        android:id="@+id/txt_dangxuat"
+                        android:layout_width="@dimen/width_button_logOut_account_loggin"
+                        android:layout_height="@dimen/heith_button_logOut_account_loggin"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/Margin_padding8"
+                        android:background="@drawable/button_muahang"
+                        android:gravity="center"
+                        android:text=" Đăng xuất"
+                        android:textAllCaps="true"
+                        android:textColor="@color/mautrang"
+                        android:textSize="@dimen/TextSize14"
+                        tools:ignore="RtlCompat"></TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
